@@ -1,0 +1,89 @@
+$top-linear-color: #e98283;
+$bottom-linear-color: #f1da8a;
+$linear-gradient-image: linear-gradient(to bottom, $top-linear-color, $bottom-linear-color);
+$primary-color: #95e1d3;
+$text-color:#333333;
+$p-color:#bfbfbf;
+$dodge-title-color: #f38181;
+$dodge-links-color: #fce38a;
+$Kaushan:'Kaushan Script',
+cursive;
+$Montserrat:'Montserrat',
+sans-serif;
+// height
+$header-height:8.4rem;
+
+
+html {
+    font-size: 62.5%;
+    font-family: $Montserrat;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.section__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    & h3 {
+        font-family: $Kaushan;
+        font-weight: 400;
+    }
+
+    & h1 {
+        text-transform: uppercase;
+    }
+
+}
+
+.section__dodge {
+    width: 6rem;
+    height: 0.4rem;
+    display: block;
+    background-color: $dodge-title-color;
+}
+
+.section__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+section.content__box {
+    padding-top: 9rem;
+    padding-bottom: 11rem;
+
+    & .section__title {
+        margin-bottom: 4.6rem;
+
+
+        & h3 {
+            font-size: 2.4rem;
+        }
+
+        & h1 {
+            font-size: 3rem;
+            margin-top: 2.7rem;
+            margin-bottom: 4;
+
+        }
+    }
+}
+
+p.section__description {
+    color: $p-color;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 96rem;
+    margin-bottom: 10rem;
+}
