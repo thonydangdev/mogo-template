@@ -1068,26 +1068,29 @@ body {
 }
 .uniquedesigns .section-bg {
   height: 85rem;
+  background-image: url("../images/uiquedesign/2.jpg");
+}
+
+.section-bg {
   width: 100%;
   position: absolute;
   right: 0;
   left: 0;
   z-index: -4;
   top: -4rem;
-  background-image: url("../images/uiquedesign/2.jpg");
   background-repeat: no-repeat;
   background-size: 100% 150%;
   background-position: 0% 0%;
   overflow: hidden;
 }
-.uniquedesigns .section-bg > img {
+.section-bg > img {
   width: 30%;
   height: 82.5%;
   top: 72%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.uniquedesigns .section-bg::after {
+.section-bg::after {
   content: "";
   height: 100%;
   width: 100%;
@@ -1195,7 +1198,8 @@ body {
   background-color: #f5f5f5;
   border-radius: 100rem;
 }
-.whatwedo .whatwedo__slider {
+
+.slider {
   background-color: #f8f8f8;
   margin-top: 12rem;
   height: 28rem;
@@ -1203,47 +1207,47 @@ body {
   justify-content: center;
   align-items: center;
 }
-.whatwedo .whatwedo__slider .btn-slider {
+.slider .btn-slider {
   border: 0;
   background-color: transparent;
   padding: 2rem;
   cursor: pointer;
   height: 100%;
 }
-.whatwedo .whatwedo__slider .btn-slider svg {
+.slider .btn-slider svg {
   fill: #ccc;
 }
-.whatwedo .whatwedo__slider .btn-slider-prev svg {
+.slider .btn-slider-prev svg {
   transform: rotate(-90deg);
 }
-.whatwedo .whatwedo__slider .btn-slider-next svg {
+.slider .btn-slider-next svg {
   transform: rotate(90deg);
 }
-.whatwedo .whatwedo__slider-content {
+.slider-content {
   flex: 1;
   display: flex;
   align-items: center;
   overflow: hidden;
   height: 100%;
 }
-.whatwedo .whatwedo__slider-content-item {
+.slider-content-item {
   display: flex;
   width: 100%;
 }
-.whatwedo .whatwedo__slider-item-left {
+.slider-item-left {
   margin-right: 6rem;
   padding: 6rem;
   border: 3px solid #95e1d3;
 }
-.whatwedo .whatwedo__slider-item-left svg {
+.slider-item-left svg {
   fill: #95e1d3;
 }
-.whatwedo .whatwedo__slider-item-right {
+.slider-item-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.whatwedo .whatwedo__slider-item-right p.section__description {
+.slider-item-right p.section__description {
   font-weight: 300;
   font-style: italic;
   font-size: 2.4rem;
@@ -1251,14 +1255,14 @@ body {
   text-align: left;
   margin: 0;
 }
-.whatwedo .whatwedo__slider-item-right .description__author {
+.slider-item-right .description__author {
   display: flex;
   align-items: center;
   font-size: 2.4rem;
   font-family: "Kaushan Script", cursive;
   font-weight: 500;
 }
-.whatwedo .whatwedo__slider-item-right .description__author span {
+.slider-item-right .description__author span {
   margin-right: 1rem;
 }
 
@@ -1398,6 +1402,117 @@ body {
 .meetourteam .team-logo img {
   padding: 5rem;
   object-fit: cover;
+}
+
+.someofwork .picture__box {
+  height: 78rem;
+  width: 100%;
+}
+.someofwork .picture__box .picture__col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.someofwork .picture__box .picture__col:nth-child(3) img {
+  height: 100%;
+}
+.someofwork .picture__box .picture__col img {
+  flex: 1;
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
+}
+.someofwork .slider-item-left {
+  border: 0;
+  padding: 0;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.someofwork .slider-item-left img {
+  width: 21rem;
+  height: 21rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.someofwork .slider-item-right p {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.happyclients {
+  position: relative;
+  height: 83rem;
+}
+.happyclients .section__box {
+  height: 100%;
+  justify-content: flex-start;
+  flex: 1;
+}
+.happyclients .section-bg {
+  height: 100%;
+  background-image: url("../images/whatpeoplesay/5.jpg");
+  background-size: 100% 150%;
+  background-position: 0% -4%;
+}
+.happyclients .section-bg::after {
+  background-color: #f4f4f4;
+}
+.happyclients .people__box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.happyclients .people__item {
+  display: flex;
+  padding: 4rem;
+}
+.happyclients .people__info {
+  width: calc(100% - 11rem);
+  margin-left: 3rem;
+}
+.happyclients .people__info__name {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.happyclients .people__info__position {
+  font-style: italic;
+  font-weight: 400;
+  color: #959595;
+}
+.happyclients .people__info .section__dodge {
+  margin: 2.5rem 0;
+}
+.happyclients .people__info p {
+  text-align: left;
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: #b0b0b0;
+}
+.happyclients .people__avatar {
+  object-fit: none;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+}
+
+.people__item:nth-child(1) .people__avatar {
+  object-position: 47% 0%;
+}
+
+.people__item:nth-child(2) .people__avatar {
+  object-position: 60% 48%;
+}
+
+.people__item:nth-child(3) .people__avatar {
+  object-position: 56% 7%;
+}
+
+.people__item:nth-child(4) .people__avatar {
+  object-position: 26% 10%;
 }
 
 @keyframes changeOpen {
