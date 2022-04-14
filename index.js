@@ -1,11 +1,20 @@
 const btnWhatwedos = document.querySelectorAll('.whatwedo__content-item-title')
+function getParentElements(element, selector) {
+    while (element.parentElement) {
+        if (element.parentElement.matches(selector)) {
+            return element.parentElement
+        }
+        element = element.parentElement
+    }
+}
 btnWhatwedos.forEach((btnWhatwedo) => {
     btnWhatwedo.addEventListener('click', (e) => {
-        if (e.target.parentElement.classList.contains('active')) {
-            e.target.parentElement.classList.remove('active')
+        let parentOfThis = getParentElements(e.target, '.whatwedo__content-item')
+        if (parentOfThis.classList.contains('active')) {
+            parentOfThis.classList.remove('active')
         } else {
             removeActive()
-            e.target.parentElement.classList.add('active')
+            parentOfThis.classList.add('active')
         }
 
     })

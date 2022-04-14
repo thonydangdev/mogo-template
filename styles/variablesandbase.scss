@@ -12,6 +12,7 @@ $Montserrat:'Montserrat',
 sans-serif;
 // height
 $header-height:8.4rem;
+$image-meetourteam-height:47rem;
 
 
 html {
@@ -86,4 +87,5 @@ p.section__description {
     margin: 0 auto;
     max-width: 96rem;
     margin-bottom: 10rem;
+    font-family: 'Roboto', sans-serif;
 }
