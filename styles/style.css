@@ -1480,7 +1480,7 @@ body {
 .happyclients .people__info__position {
   font-style: italic;
   font-weight: 400;
-  color: #959595;
+  color: #a6a6a6;
 }
 .happyclients .people__info .section__dodge {
   margin: 2.5rem 0;
@@ -1490,7 +1490,7 @@ body {
   margin: 0;
   font-size: 1.5rem;
   line-height: 2.4rem;
-  color: #b0b0b0;
+  color: #a6a6a6;
 }
 .happyclients .people__avatar {
   object-fit: none;
@@ -1513,6 +1513,95 @@ body {
 
 .people__item:nth-child(4) .people__avatar {
   object-position: 26% 10%;
+}
+
+.lastestblog .section__picturebox-item {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.lastestblog .section__picturebox-item:nth-child(1) img {
+  object-position: 23% 0%;
+}
+.lastestblog .section__picturebox-item:nth-child(2) img {
+  object-position: 56% 0%;
+}
+.lastestblog .section__picturebox-item:nth-child(3) img {
+  object-position: 75% 0%;
+}
+.lastestblog .section__picturebox-item:hover img {
+  transform: translate(0, 0);
+}
+.lastestblog .section__picturebox-item:hover .section__picturebox-img::after {
+  opacity: 1;
+}
+.lastestblog .section__picturebox-img {
+  height: 24rem;
+  position: relative;
+}
+.lastestblog .section__picturebox-img::after {
+  background-color: transparent;
+  opacity: 1;
+}
+.lastestblog .section__picturebox-img-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 7.2rem;
+  background-color: #95e1d3;
+  position: absolute;
+  top: 16rem;
+  left: -1rem;
+}
+.lastestblog .section__picturebox-img-tag span {
+  color: #fff;
+}
+.lastestblog .section__picturebox-img-tag .tag-day {
+  font-weight: 700;
+  font-size: 2.2rem;
+  font-family: "Montserrat", sans-serif;
+}
+.lastestblog .section__picturebox-img-tag .tag-month {
+  font-style: italic;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+.lastestblog .section__picturebox-info {
+  display: flex;
+  flex-direction: column;
+}
+.lastestblog .section__picturebox-info-title {
+  margin: 2rem 0;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+.lastestblog .section__picturebox-info p {
+  margin: 0;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: #a6a6a6;
+  margin-bottom: 2.4rem;
+}
+.lastestblog .section__picturebox-info-reaction {
+  display: flex;
+  align-items: center;
+  padding: 1.6rem 0;
+  border-top: 1px solid #e5e5e5;
+}
+.lastestblog .section__picturebox-info-reaction .tag + .tag {
+  margin-left: 1.8rem;
+}
+.lastestblog .section__picturebox-info-reaction .tag span {
+  font-style: italic;
+  color: #bfbfbf;
+  font-size: 1.5rem;
+}
+.lastestblog .section__picturebox-info-reaction .tag svg {
+  margin-right: 0.6rem;
+  fill: #95e1d3;
 }
 
 @keyframes changeOpen {
