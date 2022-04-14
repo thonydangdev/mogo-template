@@ -1114,6 +1114,252 @@ body {
     }
 }
 
+.openmap {
+    height: 20rem;
+    position: relative;
+
+    & .section__box {
+        height: 100%;
+
+        & h1 {
+            margin: 1.5rem 0 2.5rem 0;
+            color: $top-linear-color;
+        }
+
+        & svg {
+            fill: $top-linear-color;
+        }
+    }
+
+    & .section-bg {
+        height: 100%;
+        background-size: 100% 150%;
+        background-position: 0% -4%;
+        top: 0;
+
+        &>img {
+            top: 0;
+            left: 0;
+            object-fit: none;
+            object-position: bottom;
+            width: 100%;
+            height: 100%;
+            transform: translate(0%, 0%);
+        }
+
+        &::after {
+            background-color: #f4f4f4;
+            transform: translateX(-100%);
+            z-index: 0;
+        }
+    }
+}
+
+.footer {
+
+    & .footer__content {
+        padding: 5.5rem 0 6rem 0;
+
+        & .col {
+            display: flex;
+            flex-direction: column;
+        }
+
+        & .footer__content-title {
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            color: #3f3f3f;
+        }
+
+        &-left {
+            & .footer__logo {
+                font-size: 4.6rem;
+                font-weight: 700;
+                color: #ccc;
+                margin: 0;
+            }
+
+            & .followers {
+                & span {
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                }
+
+                font-size:1.4rem;
+                font-weight: 500;
+                padding-bottom:2rem;
+                border-bottom: 0.1rem solid #e5e5e5;
+            }
+
+            & .followSocial {
+                padding-top: 1.6rem;
+                padding-bottom: 4rem;
+                display: flex;
+                align-items: center;
+
+                & span {
+                    font-style: italic;
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                }
+
+                & .list__Social {
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+
+                    &-item {
+                        padding: 0.4rem;
+                        margin: 0 0.4rem;
+
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+
+                    &-links {
+                        color: $primary-color;
+                    }
+                }
+            }
+
+            & p {
+                text-align: left;
+                font-size: 1.5rem;
+                line-height: 2.4rem;
+                color: #b1b1b1;
+                margin: 2.5rem 0 5rem 0;
+            }
+
+            & .footer__combobox {
+                height: 4rem;
+                display: flex;
+                align-items: center;
+                box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+
+                & input {
+                    border: 0;
+                    flex: 1;
+                    height: 100%;
+                    padding: 0 1rem;
+                }
+
+                & button {
+                    border: 0;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    padding: 1.2rem 3.5rem;
+                    background-color: $primary-color;
+                    color: #fff;
+                }
+
+            }
+        }
+
+        &-mid {
+            & .footer__content-box {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                flex: 1;
+                margin-top: 4.5rem;
+
+                &-item {
+                    display: flex;
+                    align-items: center;
+
+
+                    & img {
+                        margin-right: 2rem;
+                    }
+                }
+
+                &-info {
+                    &-title {
+                        font-family: $Montserrat;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        line-height: 1.8rem;
+                        margin-bottom: 0.3rem;
+                    }
+
+                    &-time {
+                        font-style: italic;
+                        font-weight: 300;
+                        font-family: 'Roboto', sans-serif;
+                        color: #b1b1b1;
+                    }
+                }
+            }
+        }
+
+        &-right {
+            & .footer__content-box {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                flex: 1;
+
+                & .picture__box {
+                    &.row {
+                        margin-left: -0.1rem;
+                        margin-right: -0.1rem;
+                    }
+
+                    & .col.picture__box-img {
+                        margin: 0.1rem 0;
+                        padding-left: 0.1rem;
+                        padding-right: 0.1rem;
+                    }
+
+                    margin-top: 4.5rem;
+                }
+
+                & .viewmore {
+                    padding: 0;
+                    text-decoration: none;
+                    width: 100%;
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    font-style: italic;
+                    font-weight: 300;
+
+
+
+                }
+            }
+
+        }
+    }
+
+    & .copyright {
+        border-top: 0.1rem solid #c8c8c8;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        font-weight: 600;
+
+
+        & span {
+            color: $top-linear-color;
+            margin-left: 0.6rem;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+
 
 
 // @keyframes animate {

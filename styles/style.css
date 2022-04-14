@@ -1604,6 +1604,198 @@ body {
   fill: #95e1d3;
 }
 
+.openmap {
+  height: 20rem;
+  position: relative;
+}
+.openmap .section__box {
+  height: 100%;
+}
+.openmap .section__box h1 {
+  margin: 1.5rem 0 2.5rem 0;
+  color: #e98283;
+}
+.openmap .section__box svg {
+  fill: #e98283;
+}
+.openmap .section-bg {
+  height: 100%;
+  background-size: 100% 150%;
+  background-position: 0% -4%;
+  top: 0;
+}
+.openmap .section-bg > img {
+  top: 0;
+  left: 0;
+  object-fit: none;
+  object-position: bottom;
+  width: 100%;
+  height: 100%;
+  transform: translate(0%, 0%);
+}
+.openmap .section-bg::after {
+  background-color: #f4f4f4;
+  transform: translateX(-100%);
+  z-index: 0;
+}
+
+.footer .footer__content {
+  padding: 5.5rem 0 6rem 0;
+}
+.footer .footer__content .col {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer__content .footer__content-title {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #3f3f3f;
+}
+.footer .footer__content-left .footer__logo {
+  font-size: 4.6rem;
+  font-weight: 700;
+  color: #ccc;
+  margin: 0;
+}
+.footer .footer__content-left .followers {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid #e5e5e5;
+}
+.footer .footer__content-left .followers span {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.footer .footer__content-left .followSocial {
+  padding-top: 1.6rem;
+  padding-bottom: 4rem;
+  display: flex;
+  align-items: center;
+}
+.footer .footer__content-left .followSocial span {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.footer .footer__content-left .followSocial .list__Social {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.footer .footer__content-left .followSocial .list__Social-item {
+  padding: 0.4rem;
+  margin: 0 0.4rem;
+}
+.footer .footer__content-left .followSocial .list__Social-item:hover {
+  opacity: 0.6;
+}
+.footer .footer__content-left .followSocial .list__Social-links {
+  color: #95e1d3;
+}
+.footer .footer__content-left p {
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: #b1b1b1;
+  margin: 2.5rem 0 5rem 0;
+}
+.footer .footer__content-left .footer__combobox {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+.footer .footer__content-left .footer__combobox input {
+  border: 0;
+  flex: 1;
+  height: 100%;
+  padding: 0 1rem;
+}
+.footer .footer__content-left .footer__combobox button {
+  border: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1.2rem 3.5rem;
+  background-color: #95e1d3;
+  color: #fff;
+}
+.footer .footer__content-mid .footer__content-box {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  margin-top: 4.5rem;
+}
+.footer .footer__content-mid .footer__content-box-item {
+  display: flex;
+  align-items: center;
+}
+.footer .footer__content-mid .footer__content-box-item img {
+  margin-right: 2rem;
+}
+.footer .footer__content-mid .footer__content-box-info-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.8rem;
+  margin-bottom: 0.3rem;
+}
+.footer .footer__content-mid .footer__content-box-info-time {
+  font-style: italic;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  color: #b1b1b1;
+}
+.footer .footer__content-right .footer__content-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex: 1;
+}
+.footer .footer__content-right .footer__content-box .picture__box {
+  margin-top: 4.5rem;
+}
+.footer .footer__content-right .footer__content-box .picture__box.row {
+  margin-left: -0.1rem;
+  margin-right: -0.1rem;
+}
+.footer .footer__content-right .footer__content-box .picture__box .col.picture__box-img {
+  margin: 0.1rem 0;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+}
+.footer .footer__content-right .footer__content-box .viewmore {
+  padding: 0;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-style: italic;
+  font-weight: 300;
+}
+.footer .copyright {
+  border-top: 0.1rem solid #c8c8c8;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.footer .copyright span {
+  color: #e98283;
+  margin-left: 0.6rem;
+  cursor: pointer;
+}
+.footer .copyright span:hover {
+  text-decoration: underline;
+}
+
 @keyframes changeOpen {
   0% {
     transform: rotateX(0);
