@@ -19,8 +19,12 @@
         <header class="header">
             <div class="grid wide">
                 <span class="header__logo">MoGo</span>
+                <button class="toggle">
+                    <i class="icon-open fas fa-bars"></i>
+                    <i class="icon-close fas fa-times"></i>
+                </button>
                 <nav class="header__navbar">
-                    <ul class="header__navbar-list">
+                    <ul class="header__navbar-list ">
                         <li class="header__navbar-list-item"><a href="#"
                                 class="header__navbar-list-item-links">About</a></li>
                         <li class="header__navbar-list-item"><a href="#"
@@ -36,7 +40,7 @@
                                 <path id="MAGNIFYING_GLASS" data-name="MAGNIFYING GLASS" class="cls-1"
                                     d="M1561.32,50.983a1.652,1.652,0,0,1-2.34,2.334h0l-4.83-4.836a6.627,6.627,0,1,1,2.33-2.334l4.84,4.836h0ZM1550.8,37.85a4.95,4.95,0,1,0,4.95,4.95A4.952,4.952,0,0,0,1550.8,37.85Z"
                                     transform="translate(-1544.19 -36.188)" />
-                            </svg></li>
+                            </svg><span>Search</span></li>
                         <li class="header__navbar-list-item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="17.62" height="14.031"
                                 viewBox="0 0 17.62 14.031">
@@ -44,7 +48,7 @@
                                 <path id="SHOPPING_CART" data-name="SHOPPING CART" class="cls-1"
                                     d="M1501.73,40.663h0l-2.48,5.5h0a0.815,0.815,0,0,1-.7.485h0l-7.12.475,0.41,1.177h7.76a1.65,1.65,0,1,1-1.65,1.651h-7.7a1.65,1.65,0,1,1-1.65-1.651h1.49l-3.18-9.075h-1.89a0.825,0.825,0,0,1,0-1.65h2.48a0.835,0.835,0,0,1,.78.554h0l0.48,1.373h12.21a0.826,0.826,0,0,1,.83.825A0.941,0.941,0,0,1,1501.73,40.663Zm-12.39.487,1.52,4.357,7.09-.473,1.75-3.884h-10.36Z"
                                     transform="translate(-1484.19 -37.563)" />
-                            </svg>
+                            </svg><span>Cart</span>
                         </li>
                     </ul>
                 </nav>
@@ -59,7 +63,10 @@
                     <h1>Welcome to Mogo</h1>
                     <div class="section__dodge"></div>
                 </div>
-                <button class="btn banner-btn">Learn More</button>
+                <div class="space__btn">
+                    <button class="btn banner-btn">Learn More</button>
+
+                </div>
                 <div class="banner__step">
                     <div class="banner__step-item">
                         <div class="banner__progress-step"></div>
@@ -105,7 +112,7 @@
                     provident nobis mollitia.
                 </p>
                 <div class="section__picturebox row">
-                    <div class="col c-4 section__picturebox-item">
+                    <div class="col md-4 sm-4 c-12 section__picturebox-item">
                         <div class="section__picturebox-img">
                             <img src="./images/aboutus/2.jpg" alt="">
                             <div class="section__picturebox-img-bg">
@@ -118,7 +125,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col c-4 section__picturebox-item">
+                    <div class="col md-4 sm-4 c-12 section__picturebox-item">
                         <div class="section__picturebox-img">
                             <img src="./images/aboutus/3.jpg" alt="">
                             <div class="section__picturebox-img-bg">
@@ -132,7 +139,7 @@
                         </div>
 
                     </div>
-                    <div class="col c-4 section__picturebox-item">
+                    <div class="col md-4 sm-4 c-12 section__picturebox-item">
                         <div class="section__picturebox-img">
                             <img src="./images/aboutus/1.jpg" alt="">
                             <div class="section__picturebox-img-bg">
@@ -183,88 +190,91 @@
                     <h3>We work with</h3>
                     <h1>Amazing Services</h1>
                     <div class="section__dodge"></div>
+                    <ul class="section__list row">
+                        <li class="section__list-item col md-4 sm-6 c-12">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30.5" viewBox="0 0 32 30.5">
+                                <path id="ALARM" class="cls-1"
+                                    d="M420.74,2319.5a15.727,15.727,0,0,0-8.243-8.24A5.868,5.868,0,0,1,420.74,2319.5Zm-0.24,6.5a14.442,14.442,0,0,1-3.963,9.94l2.029,2.03a1.482,1.482,0,0,1-1.049,2.53,1.51,1.51,0,0,1-1.049-.43l-2.178-2.18a14.471,14.471,0,0,1-16.566.01l-2.163,2.16a1.5,1.5,0,1,1-2.122-2.12l2.012-2.01A14.495,14.495,0,1,1,420.5,2326ZM406,2314.5a11.5,11.5,0,1,0,11.5,11.5A11.5,11.5,0,0,0,406,2314.5Zm6,13h-6a1.5,1.5,0,0,1-1.5-1.5v-8a1.5,1.5,0,0,1,3,0v6.5H412A1.5,1.5,0,0,1,412,2327.5Zm-20.713-7.79a5.994,5.994,0,0,1,8.419-8.42A16.016,16.016,0,0,0,391.287,2319.71Z"
+                                    transform="translate(-390 -2310)" />
+                            </svg>
+                            <div class="section__list-item-info">
+                                <h5 class="section__list-item-title">Photography</h5>
+                                <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit,sed
+                                    do eiusmod tempor</p>
+                            </div>
+                        </li>
+                        <li class="section__list-item col md-4 sm-6 c-12">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+
+                                <path id="LINE_GRAPH" data-name="LINE GRAPH" class="cls-1"
+                                    d="M821.5,2341h-29a1.5,1.5,0,0,1-1.5-1.5v-29a1.5,1.5,0,0,1,1.5-1.5h29a1.5,1.5,0,0,1,1.5,1.5v29A1.5,1.5,0,0,1,821.5,2341Zm-1.5-29H794v26h26v-26Zm-23.785,13.24h0l4-2.5h0a1.524,1.524,0,0,1,1.625.03h0.006l6.631,4.42,7.638-5.4a1.5,1.5,0,1,1,1.763,2.43h0l-8.5,6h0a1.486,1.486,0,0,1-.878.29,1.505,1.505,0,0,1-.861-0.28l-6.657-4.43-3.135,1.96a1.533,1.533,0,0,1-.847.26A1.5,1.5,0,0,1,796.215,2325.24Z"
+                                    transform="translate(-791 -2309)" />
+                            </svg>
+                            <div class="section__list-item-info">
+                                <h5 class="section__list-item-title">Web design</h5>
+                                <p class="section__description">ipsum dolor sit amet consectetur adipisicing elit,sed
+                                    do eiusmod tempor</p>
+                            </div>
+                        </li>
+                        <li class="section__list-item col md-4 sm-6 c-12">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="28" viewBox="0 0 31 28">
+                                <path id="COMPUTER_OK" data-name="COMPUTER / OK" class="cls-1"
+                                    d="M1220,2333h-9.5v2.5l2,2v0.5h-13v-0.5l2-2V2333H1192a1.5,1.5,0,0,1-1.5-1.5v-20a1.5,1.5,0,0,1,1.5-1.5h28a1.5,1.5,0,0,1,1.5,1.5v20A1.5,1.5,0,0,1,1220,2333Zm-0.5-21h-27v17h27v-17Zm-16.5,7a1.505,1.505,0,0,1,1.06.44h0l0.94,0.94,2.94-2.94h0a1.5,1.5,0,1,1,2.12,2.12h0l-4,4h0a1.5,1.5,0,0,1-2.12,0h0l-2-2h0A1.5,1.5,0,0,1,1203,2319Z"
+                                    transform="translate(-1190.5 -2310)" />
+                            </svg>
+
+                            <div class="section__list-item-info">
+                                <h5 class="section__list-item-title">Creativity</h5>
+                                <p class="section__description">dolor sit amet consectetur adipisicing elit,sed
+                                    do eiusmod tempor</p>
+                            </div>
+                        </li>
+                        <li class="section__list-item col md-4 sm-6 c-12">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <path id="BOOK_2" data-name="BOOK 2" class="cls-1"
+                                    d="M422.065,2504.89l-14.471,5.99a1.53,1.53,0,0,1-1.188,0l-14.471-5.99a1.5,1.5,0,0,1-.935-1.39v-23a1.5,1.5,0,0,1,1.5-1.5,1.55,1.55,0,0,1,.573.11h0l0,0.01h0.013L407,2484.88l13.911-5.76h0.013l0-.01h0a1.55,1.55,0,0,1,.573-0.11,1.5,1.5,0,0,1,1.5,1.5v23A1.5,1.5,0,0,1,422.065,2504.89ZM405.5,2487.5l-11.5-4.76v19.76l11.5,4.76V2487.5Zm14.5-4.76-11.5,4.76v19.76l11.5-4.76v-19.76Zm-9.121,6.89,5.5-2.5h0A1.593,1.593,0,0,1,417,2487a1.5,1.5,0,0,1,.621,2.87h0l-5.5,2.5h0a1.6,1.6,0,0,1-.621.13A1.5,1.5,0,0,1,410.879,2489.63Zm0,5.5h0l5.5-2.5h0a1.593,1.593,0,0,1,.621-0.13,1.5,1.5,0,0,1,.621,2.87l-5.5,2.5v-0.01a1.445,1.445,0,0,1-.621.14A1.5,1.5,0,0,1,410.879,2495.13Zm0,5.5h0l5.5-2.5h0A1.593,1.593,0,0,1,417,2498a1.5,1.5,0,0,1,.621,2.87h0l-5.5,2.5h0a1.6,1.6,0,0,1-.621.13A1.5,1.5,0,0,1,410.879,2500.63ZM397,2487a1.6,1.6,0,0,1,.621.13h0l5.5,2.5h0a1.5,1.5,0,0,1-.621,2.87,1.593,1.593,0,0,1-.621-0.13h0l-5.5-2.5h0A1.5,1.5,0,0,1,397,2487Zm0,5.5a1.6,1.6,0,0,1,.621.13h0l5.5,2.5h0a1.5,1.5,0,0,1-.621,2.87,1.439,1.439,0,0,1-.621-0.14v0.01l-5.5-2.5h0A1.5,1.5,0,0,1,397,2492.5Zm0,5.5a1.6,1.6,0,0,1,.621.13h0l5.5,2.5h0a1.5,1.5,0,0,1-.621,2.87,1.593,1.593,0,0,1-.621-0.13h0l-5.5-2.5h0A1.5,1.5,0,0,1,397,2498Z"
+                                    transform="translate(-391 -2479)" />
+                            </svg>
+
+                            <div class="section__list-item-info">
+                                <h5 class="section__list-item-title">Seo</h5>
+                                <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit,sed
+                                    do eiusmod tempor</p>
+                            </div>
+                        </li>
+                        <li class="section__list-item col md-4 sm-6 c-12">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30.5" viewBox="0 0 32 30.5">
+
+                                <path id="HOME" class="cls-1"
+                                    d="M822,2495.5a1.493,1.493,0,0,1-2.52,1.09l0,0.01-13.439-13.44h0l-0.038-.04h0l-13.446,13.45h0a1.525,1.525,0,0,1-1.053.43,1.5,1.5,0,0,1-1.5-1.5,1.479,1.479,0,0,1,.461-1.08l14.458-14.46a1.51,1.51,0,0,1,1.081-.46h0.092c0.023,0,.045.01,0.068,0.01h0a1.479,1.479,0,0,1,.933.47h0l5.9,5.9v-1.38a1.5,1.5,0,0,1,3,0v4.38l5.6,5.6h0A1.485,1.485,0,0,1,822,2495.5Zm-3,2.5v10.5a1.5,1.5,0,0,1-1.5,1.5h-3v-12h-6v12h-14a1.5,1.5,0,0,1-1.5-1.5V2498l13-13Zm-15.5,0h-6v6h6v-6Z"
+                                    transform="translate(-790 -2479.5)" />
+                            </svg>
+
+                            <div class="section__list-item-info">
+                                <h5 class="section__list-item-title">CSS/HTML</h5>
+                                <p class="section__description">ipsum dolor sit amet consectetur adipisicing elit,sed
+                                    do eiusmod tempor</p>
+                            </div>
+                        </li>
+                        <li class="section__list-item col md-4 sm-6 c-12">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+
+                                <path id="IMAGE" class="cls-1"
+                                    d="M1220.5,2511h-29a1.5,1.5,0,0,1-1.5-1.5v-29a1.5,1.5,0,0,1,1.5-1.5h29a1.5,1.5,0,0,1,1.5,1.5v29A1.5,1.5,0,0,1,1220.5,2511Zm-1.5-29h-26v26h26v-26Zm-22.5,1.5h5.5a1.5,1.5,0,0,1,0,3h-4.5v4.5h0a1.5,1.5,0,0,1-3,0h0v-5.5h0v-2h2Zm-2,15.5h0a1.5,1.5,0,0,1,3,0h0v4.5h4.5a1.5,1.5,0,0,1,0,3h-7.5v-2h0V2499Zm15.5-15.5h7.5v2h0v5.5h0a1.5,1.5,0,0,1-3,0h0v-4.5H1210A1.5,1.5,0,0,1,1210,2483.5Zm0,20h4.5V2499h0a1.5,1.5,0,0,1,3,0h0v5.5h0v2H1210A1.5,1.5,0,0,1,1210,2503.5Z"
+                                    transform="translate(-1190 -2479)" />
+                            </svg>
+
+                            <div class="section__list-item-info">
+                                <h5 class="section__list-item-title">Digital</h5>
+                                <p class="section__description">dolor sit amet consectetur adipisicing elit,sed
+                                    do eiusmod tempor</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="section__list">
-                    <li class="section__list-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30.5" viewBox="0 0 32 30.5">
-                            <path id="ALARM" class="cls-1"
-                                d="M420.74,2319.5a15.727,15.727,0,0,0-8.243-8.24A5.868,5.868,0,0,1,420.74,2319.5Zm-0.24,6.5a14.442,14.442,0,0,1-3.963,9.94l2.029,2.03a1.482,1.482,0,0,1-1.049,2.53,1.51,1.51,0,0,1-1.049-.43l-2.178-2.18a14.471,14.471,0,0,1-16.566.01l-2.163,2.16a1.5,1.5,0,1,1-2.122-2.12l2.012-2.01A14.495,14.495,0,1,1,420.5,2326ZM406,2314.5a11.5,11.5,0,1,0,11.5,11.5A11.5,11.5,0,0,0,406,2314.5Zm6,13h-6a1.5,1.5,0,0,1-1.5-1.5v-8a1.5,1.5,0,0,1,3,0v6.5H412A1.5,1.5,0,0,1,412,2327.5Zm-20.713-7.79a5.994,5.994,0,0,1,8.419-8.42A16.016,16.016,0,0,0,391.287,2319.71Z"
-                                transform="translate(-390 -2310)" />
-                        </svg>
-                        <div class="section__list-item-info">
-                            <h5 class="section__list-item-title">Photography</h5>
-                            <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit,sed
-                                do eiusmod tempor</p>
-                        </div>
-                    </li>
-                    <li class="section__list-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
 
-                            <path id="LINE_GRAPH" data-name="LINE GRAPH" class="cls-1"
-                                d="M821.5,2341h-29a1.5,1.5,0,0,1-1.5-1.5v-29a1.5,1.5,0,0,1,1.5-1.5h29a1.5,1.5,0,0,1,1.5,1.5v29A1.5,1.5,0,0,1,821.5,2341Zm-1.5-29H794v26h26v-26Zm-23.785,13.24h0l4-2.5h0a1.524,1.524,0,0,1,1.625.03h0.006l6.631,4.42,7.638-5.4a1.5,1.5,0,1,1,1.763,2.43h0l-8.5,6h0a1.486,1.486,0,0,1-.878.29,1.505,1.505,0,0,1-.861-0.28l-6.657-4.43-3.135,1.96a1.533,1.533,0,0,1-.847.26A1.5,1.5,0,0,1,796.215,2325.24Z"
-                                transform="translate(-791 -2309)" />
-                        </svg>
-                        <div class="section__list-item-info">
-                            <h5 class="section__list-item-title">Web design</h5>
-                            <p class="section__description">ipsum dolor sit amet consectetur adipisicing elit,sed
-                                do eiusmod tempor</p>
-                        </div>
-                    </li>
-                    <li class="section__list-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="28" viewBox="0 0 31 28">
-                            <path id="COMPUTER_OK" data-name="COMPUTER / OK" class="cls-1"
-                                d="M1220,2333h-9.5v2.5l2,2v0.5h-13v-0.5l2-2V2333H1192a1.5,1.5,0,0,1-1.5-1.5v-20a1.5,1.5,0,0,1,1.5-1.5h28a1.5,1.5,0,0,1,1.5,1.5v20A1.5,1.5,0,0,1,1220,2333Zm-0.5-21h-27v17h27v-17Zm-16.5,7a1.505,1.505,0,0,1,1.06.44h0l0.94,0.94,2.94-2.94h0a1.5,1.5,0,1,1,2.12,2.12h0l-4,4h0a1.5,1.5,0,0,1-2.12,0h0l-2-2h0A1.5,1.5,0,0,1,1203,2319Z"
-                                transform="translate(-1190.5 -2310)" />
-                        </svg>
-
-                        <div class="section__list-item-info">
-                            <h5 class="section__list-item-title">Creativity</h5>
-                            <p class="section__description">dolor sit amet consectetur adipisicing elit,sed
-                                do eiusmod tempor</p>
-                        </div>
-                    </li>
-                    <li class="section__list-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                            <path id="BOOK_2" data-name="BOOK 2" class="cls-1"
-                                d="M422.065,2504.89l-14.471,5.99a1.53,1.53,0,0,1-1.188,0l-14.471-5.99a1.5,1.5,0,0,1-.935-1.39v-23a1.5,1.5,0,0,1,1.5-1.5,1.55,1.55,0,0,1,.573.11h0l0,0.01h0.013L407,2484.88l13.911-5.76h0.013l0-.01h0a1.55,1.55,0,0,1,.573-0.11,1.5,1.5,0,0,1,1.5,1.5v23A1.5,1.5,0,0,1,422.065,2504.89ZM405.5,2487.5l-11.5-4.76v19.76l11.5,4.76V2487.5Zm14.5-4.76-11.5,4.76v19.76l11.5-4.76v-19.76Zm-9.121,6.89,5.5-2.5h0A1.593,1.593,0,0,1,417,2487a1.5,1.5,0,0,1,.621,2.87h0l-5.5,2.5h0a1.6,1.6,0,0,1-.621.13A1.5,1.5,0,0,1,410.879,2489.63Zm0,5.5h0l5.5-2.5h0a1.593,1.593,0,0,1,.621-0.13,1.5,1.5,0,0,1,.621,2.87l-5.5,2.5v-0.01a1.445,1.445,0,0,1-.621.14A1.5,1.5,0,0,1,410.879,2495.13Zm0,5.5h0l5.5-2.5h0A1.593,1.593,0,0,1,417,2498a1.5,1.5,0,0,1,.621,2.87h0l-5.5,2.5h0a1.6,1.6,0,0,1-.621.13A1.5,1.5,0,0,1,410.879,2500.63ZM397,2487a1.6,1.6,0,0,1,.621.13h0l5.5,2.5h0a1.5,1.5,0,0,1-.621,2.87,1.593,1.593,0,0,1-.621-0.13h0l-5.5-2.5h0A1.5,1.5,0,0,1,397,2487Zm0,5.5a1.6,1.6,0,0,1,.621.13h0l5.5,2.5h0a1.5,1.5,0,0,1-.621,2.87,1.439,1.439,0,0,1-.621-0.14v0.01l-5.5-2.5h0A1.5,1.5,0,0,1,397,2492.5Zm0,5.5a1.6,1.6,0,0,1,.621.13h0l5.5,2.5h0a1.5,1.5,0,0,1-.621,2.87,1.593,1.593,0,0,1-.621-0.13h0l-5.5-2.5h0A1.5,1.5,0,0,1,397,2498Z"
-                                transform="translate(-391 -2479)" />
-                        </svg>
-
-                        <div class="section__list-item-info">
-                            <h5 class="section__list-item-title">Seo</h5>
-                            <p class="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit,sed
-                                do eiusmod tempor</p>
-                        </div>
-                    </li>
-                    <li class="section__list-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30.5" viewBox="0 0 32 30.5">
-
-                            <path id="HOME" class="cls-1"
-                                d="M822,2495.5a1.493,1.493,0,0,1-2.52,1.09l0,0.01-13.439-13.44h0l-0.038-.04h0l-13.446,13.45h0a1.525,1.525,0,0,1-1.053.43,1.5,1.5,0,0,1-1.5-1.5,1.479,1.479,0,0,1,.461-1.08l14.458-14.46a1.51,1.51,0,0,1,1.081-.46h0.092c0.023,0,.045.01,0.068,0.01h0a1.479,1.479,0,0,1,.933.47h0l5.9,5.9v-1.38a1.5,1.5,0,0,1,3,0v4.38l5.6,5.6h0A1.485,1.485,0,0,1,822,2495.5Zm-3,2.5v10.5a1.5,1.5,0,0,1-1.5,1.5h-3v-12h-6v12h-14a1.5,1.5,0,0,1-1.5-1.5V2498l13-13Zm-15.5,0h-6v6h6v-6Z"
-                                transform="translate(-790 -2479.5)" />
-                        </svg>
-
-                        <div class="section__list-item-info">
-                            <h5 class="section__list-item-title">CSS/HTML</h5>
-                            <p class="section__description">ipsum dolor sit amet consectetur adipisicing elit,sed
-                                do eiusmod tempor</p>
-                        </div>
-                    </li>
-                    <li class="section__list-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-
-                            <path id="IMAGE" class="cls-1"
-                                d="M1220.5,2511h-29a1.5,1.5,0,0,1-1.5-1.5v-29a1.5,1.5,0,0,1,1.5-1.5h29a1.5,1.5,0,0,1,1.5,1.5v29A1.5,1.5,0,0,1,1220.5,2511Zm-1.5-29h-26v26h26v-26Zm-22.5,1.5h5.5a1.5,1.5,0,0,1,0,3h-4.5v4.5h0a1.5,1.5,0,0,1-3,0h0v-5.5h0v-2h2Zm-2,15.5h0a1.5,1.5,0,0,1,3,0h0v4.5h4.5a1.5,1.5,0,0,1,0,3h-7.5v-2h0V2499Zm15.5-15.5h7.5v2h0v5.5h0a1.5,1.5,0,0,1-3,0h0v-4.5H1210A1.5,1.5,0,0,1,1210,2483.5Zm0,20h4.5V2499h0a1.5,1.5,0,0,1,3,0h0v5.5h0v2H1210A1.5,1.5,0,0,1,1210,2503.5Z"
-                                transform="translate(-1190 -2479)" />
-                        </svg>
-
-                        <div class="section__list-item-info">
-                            <h5 class="section__list-item-title">Digital</h5>
-                            <p class="section__description">dolor sit amet consectetur adipisicing elit,sed
-                                do eiusmod tempor</p>
-                        </div>
-                    </li>
-                </ul>
             </div>
         </section>
         <section class="uniquedesigns content__box">
@@ -291,9 +301,9 @@
                 <p class="section__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quam
                     magni dolor hic nesciunt, laborum autem facere quia mollitia voluptate delectus incidunt ex eveniet
                     dicta voluptatem facilis veniam cumque suscipit!</p>
-                <div class="whatwedo__box">
-                    <img src="./images/whatwedo/1.png" alt="">
-                    <div class="whatwedo__content">
+                <div class="whatwedo__box row">
+                    <img class="col md-6 sm-6 c-12" src="./images/whatwedo/1.png" alt="">
+                    <div class="whatwedo__content col md-6 sm-6 c-12">
                         <div class="whatwedo__content-item">
                             <div class="whatwedo__content-item-title">
                                 <div class="whatwedo__content-item-title-left">
@@ -417,505 +427,7 @@
                 </article>
             </div>
         </section>
-        <section class="meetourteam content__box">
-            <div class="grid wide section__box">
-                <div class="section__title">
-                    <h3>Who we are</h3>
-                    <h1>Meet our team</h1>
-                    <div class="section__dodge"></div>
-                </div>
-                <p class="section__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
-                    itaque autem modi saepe nemo iste, non, sequi sit temporibus nisi obcaecati animi, ab perferendis
-                    deserunt veniam numquam? Quas, placeat voluptatum.</p>
-                <div class="team-member section__picturebox row">
-                    <div class="col c-4 team-member-item section__picturebox-item">
-                        <div class="section__picturebox-img">
-                            <img src="./images/meetourteam/1.png" alt="">
-                            <div class="section__picturebox-img-bg">
-                                <ul class="social-list">
-                                    <li class="social-list-item">
-                                        <a href="#" class="social-list-link"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <div class="dodge"></div>
-                                    <li class="social-list-item">
-                                        <a href="#" class="social-list-link"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <div class="dodge"></div>
-                                    <li class="social-list-item">
-                                        <a href="#" class="social-list-link"><i class="fab fa-pinterest-p"></i></a>
-                                    </li>
-                                    <div class="dodge"></div>
-                                    <li class="social-list-item">
-                                        <a href="#" class="social-list-link"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                </ul>
 
-
-                            </div>
-                        </div>
-                        <div class="team-member-info">
-                            <h5 class="team-member-name">Matthew Dix</h5>
-                            <h6 class="team-member-position">Graphic Design</h6>
-                        </div>
-
-                    </div>
-                    <div class="col c-4 section__picturebox-item">
-                        <div class="section__picturebox-img">
-                            <img src="./images/meetourteam/5.png" alt="">
-                            <div class="section__picturebox-img-bg">
-                                <ul class="social-list">
-                                    <li class="social-list-item">
-                                        <a href="#" class="social-list-link"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <div class="dodge"></div>
-                                    <li class="social-list-item">
-                                        <a href="#" class="social-list-link"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <div class="dodge"></div>
-                                    <li class="social-list-item">
-                                        <a href="#" class="social-list-link"><i class="fab fa-pinterest-p"></i></a>
-                                    </li>
-                                    <div class="dodge"></div>
-                                    <li class="social-list-item">
-                                        <a href="#" class="social-list-link"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="team-member-info">
-                            <h5 class="team-member-name">Christopher Campbell</h5>
-                            <h6 class="team-member-position">Branding/UX Design</h6>
-                        </div>
-
-                    </div>
-                    <div class="col c-4 section__picturebox-item">
-                        <div class="section__picturebox-img">
-                            <img src="./images/meetourteam/2.png" alt="">
-
-                            <div class="section__picturebox-img-bg">
-                                <ul class="social-list">
-                                    <li class="social-list-item">
-                                        <a href="#" class="social-list-link"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <div class="dodge"></div>
-                                    <li class="social-list-item">
-                                        <a href="#" class="social-list-link"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <div class="dodge"></div>
-                                    <li class="social-list-item">
-                                        <a href="#" class="social-list-link"><i class="fab fa-pinterest-p"></i></a>
-                                    </li>
-                                    <div class="dodge"></div>
-                                    <li class="social-list-item">
-                                        <a href="#" class="social-list-link"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-                        <div class="team-member-info">
-                            <h5 class="team-member-name">Micheal Fetig</h5>
-                            <h6 class="team-member-position">Developer</h6>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="team-logo row">
-                    <img class="col c-6 sm-4 md-2" src="./images/logo/HipsterBarbel.png" alt="">
-                    <img class="col c-6 sm-4 md-2" src="./images/logo/DABC.png" alt="">
-                    <img class="col c-6 sm-4 md-2" src="./images/logo/designquality.png" alt="">
-                    <img class="col c-6 sm-4 md-2" src="./images/logo/Barbershop.png" alt="">
-                    <img class="col c-6 sm-4 md-2" src="./images/logo/Hipster.png" alt="">
-                    <img class="col c-6 sm-4 md-2" src="./images/logo/DesionTrends2015.png" alt="">
-
-
-                </div>
-            </div>
-        </section>
-        <section class="someofwork content__box">
-            <div class="grid wide section__box">
-                <div class="section__title">
-                    <h3>What we do</h3>
-                    <h1>Some of our work</h1>
-                    <div class="section__dodge"></div>
-                </div>
-                <p class="section__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
-                    itaque autem modi saepe nemo iste, non, sequi sit temporibus nisi obcaecati animi, ab perferendis
-                    deserunt veniam numquam? Quas, placeat voluptatum.</p>
-            </div>
-            <div class="picture__box row no-gutters">
-                <div class="col c-3 picture__col">
-                    <img src="./images/someofwork/1.png" alt="">
-                    <img src="./images/someofwork/7.png" alt="">
-                </div>
-                <div class="col c-3 picture__col">
-                    <img src="./images/someofwork/5.png" alt="">
-                    <img src="./images/someofwork/2.png" alt="">
-                </div>
-                <div class="col c-3 picture__col">
-                    <img src="./images/someofwork/6.png" alt="">
-                </div>
-                <div class="col c-3 picture__col">
-                    <img src="./images/someofwork/3.png" alt="">
-                    <img src="./images/someofwork/4.png" alt="">
-                </div>
-            </div>
-            <div class="grid wide">
-                <article class="slider">
-                    <button class="btn-slider btn-slider-prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12">
-                            <path id="ARROW_DOWN" data-name="ARROW / DOWN" class="cls-1"
-                                d="M1521.14,3955.47l7.86-7.85,7.96,7.96h0a1.5,1.5,0,0,0,2.54-1.08,1.483,1.483,0,0,0-.42-1.04h0l-9-9h0a1.472,1.472,0,0,0-1.08-.46h-0.01a1.488,1.488,0,0,0-1.08.46h0l-9,9h0.01A1.5,1.5,0,1,0,1521.14,3955.47Z"
-                                transform="translate(-1518.5 -3944)" />
-                        </svg>
-                    </button>
-                    <div class="slider-content">
-                        <div class="slider-content-item">
-                            <div class="slider-item-left">
-                                <img src="./images/someofwork/8.png" alt="author">
-                            </div>
-                            <div class="slider-item-right">
-                                <p class="section__description">"Lorem ipsum dolor, sit amet consectetur adipisicing
-                                    elit. Animi voluptatem iure molestias veritatis temporibus sit esse maxime?
-                                    Deleniti"
-                                </p>
-                                <span class="description__author">
-                                    <span class="section__dodge"></span> Joshua Earle
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="btn-slider btn-slider-next">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12">
-                            <path id="ARROW_DOWN" data-name="ARROW / DOWN" class="cls-1"
-                                d="M1521.14,3955.47l7.86-7.85,7.96,7.96h0a1.5,1.5,0,0,0,2.54-1.08,1.483,1.483,0,0,0-.42-1.04h0l-9-9h0a1.472,1.472,0,0,0-1.08-.46h-0.01a1.488,1.488,0,0,0-1.08.46h0l-9,9h0.01A1.5,1.5,0,1,0,1521.14,3955.47Z"
-                                transform="translate(-1518.5 -3944)" />
-                        </svg>
-                    </button>
-                </article>
-            </div>
-
-        </section>
-        <section class="happyclients content__box">
-            <div class="section-bg"></div>
-            <div class="grid wide section__box">
-                <div class="section__title">
-                    <h3>Happy Clients</h3>
-                    <h1>What people say</h1>
-                    <div class="section__dodge"></div>
-                </div>
-                <div class="row peole__box">
-                    <div class="col c-6 people__item">
-                        <img src="./images/whatpeoplesay/1.png" alt="" class="people__avatar">
-                        <div class="people__info">
-                            <h3 class="people__info__name">Matthew dix</h3>
-                            <p class="people__info__position">Graphic Design</p>
-                            <div class="section__dodge"></div>
-                            <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-                        </div>
-                    </div>
-                    <div class="col c-6 people__item">
-                        <img src="./images/whatpeoplesay/2.png" alt="" class="people__avatar">
-                        <div class="people__info">
-                            <h3 class="people__info__name">Nick Karvounis</h3>
-                            <p class="people__info__position">Graphic Design</p>
-                            <div class="section__dodge"></div>
-                            <p class="section__description">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                        </div>
-                    </div>
-                    <div class="col c-6 people__item">
-                        <img src="./images/whatpeoplesay/3.png" alt="" class="people__avatar">
-                        <div class="people__info">
-                            <h3 class="people__info__name">Jaelynn Castillo</h3>
-                            <p class="people__info__position">Graphic Design</p>
-                            <div class="section__dodge"></div>
-                            <p class="section__description">Ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                        </div>
-                    </div>
-                    <div class="col c-6 people__item">
-                        <img src="./images/whatpeoplesay/4.png" alt="" class="people__avatar">
-                        <div class="people__info">
-                            <h3 class="people__info__name">Mike petrucci</h3>
-                            <p class="people__info__position">Graphic Design</p>
-                            <div class="section__dodge"></div>
-                            <p class="section__description">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="lastestblog content__box">
-            <div class="grid wide section__box">
-                <div class="section__title">
-                    <h3>Happy Clients</h3>
-                    <h1>What people say</h1>
-                    <div class="section__dodge"></div>
-                </div>
-                <div class="section__picturebox row">
-                    <div class="col c-4 section__picturebox-item">
-                        <div class="section__picturebox-img">
-                            <img src="./images/lastblog/2.png" alt="">
-                            <div class="section__picturebox-img-tag">
-                                <span class="tag-day">15</span>
-                                <span class="tag-month">Jan</span>
-                            </div>
-                        </div>
-                        <div class="section__picturebox-info">
-                            <h3 class="section__picturebox-info-title">Lorem ipsum dolor sit amet</h3>
-                            <p class="section__description">Consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
-                            <div class="section__picturebox-info-reaction">
-                                <div class="tag view-tag">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.438" height="11.26"
-                                        viewBox="0 0 19.438 11.26">
-
-                                        <path id="VIEW" class="cls-1"
-                                            d="M789.71,9115.78a0.117,0.117,0,0,0,0,.02v0.01c0,0.01,0,.01,0,0.02s0,0.01,0,.02h0a0.729,0.729,0,0,1-.2.41c-0.2.25-.426,0.48-0.65,0.71a16.667,16.667,0,0,1-4.123,3.12,11.065,11.065,0,0,1-3.09,1.12,9.027,9.027,0,0,1-3.55-.05,13.554,13.554,0,0,1-5.5-2.86,15.053,15.053,0,0,1-2.108-2.04,0.778,0.778,0,0,1,0-1.05c0.2-.24.426-0.47,0.651-0.7a16.648,16.648,0,0,1,4.123-3.12,11.048,11.048,0,0,1,3.089-1.12,8.843,8.843,0,0,1,3.55.05,13.433,13.433,0,0,1,5.5,2.86,14.981,14.981,0,0,1,2.108,2.03,0.8,0.8,0,0,1,.2.41c0,0.01,0,.01,0,0.01a0.059,0.059,0,0,1,0,.02s0,0.01,0,.01a0.134,0.134,0,0,0,0,.02c0,0.01,0,.01,0,0.02s0,0.03,0,.04S789.71,9115.76,789.71,9115.78Zm-9.719-3.84a3.645,3.645,0,1,0,3.644,3.65A3.645,3.645,0,0,0,779.991,9111.94Zm0,5.47a1.825,1.825,0,1,1,1.822-1.82A1.825,1.825,0,0,1,779.991,9117.41Z"
-                                            transform="translate(-770.281 -9110.12)" />
-                                    </svg>
-                                    <span class="view-tag-num">542</span>
-                                </div>
-                                <div class="tag comment-tag">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.031" height="14.26"
-                                        viewBox="0 0 16.031 14.26">
-
-                                        <path id="SPEECH_BUBBLE_2" data-name="SPEECH BUBBLE 2" class="cls-1"
-                                            d="M437.416,9121.36a11.451,11.451,0,0,1-1.676-.25,6.352,6.352,0,0,1-5.647,2.23c2.441-1.15,2.391-3.07,1.957-3.32a5.615,5.615,0,0,1-3.068-4.76c0-3.4,3.727-6.14,8.434-6.14s7.577,2.74,7.577,6.14S442.124,9121.36,437.416,9121.36Zm-4.174-7.48a1.5,1.5,0,1,0,1.5,1.49A1.5,1.5,0,0,0,433.242,9113.88Zm3.75,0a1.5,1.5,0,1,0,1.5,1.49A1.5,1.5,0,0,0,436.992,9113.88Zm3.75,0a1.5,1.5,0,1,0,1.5,1.49A1.5,1.5,0,0,0,440.742,9113.88Z"
-                                            transform="translate(-428.969 -9109.12)" />
-                                    </svg>
-
-                                    <span class="comment-tag-num">17</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col c-4 section__picturebox-item">
-                        <div class="section__picturebox-img">
-                            <img src="./images/lastblog/3.png" alt="">
-                            <div class="section__picturebox-img-tag">
-                                <span class="tag-day">14</span>
-                                <span class="tag-month">Jan</span>
-                            </div>
-                        </div>
-                        <div class="section__picturebox-info">
-                            <h3 class="section__picturebox-info-title">sed do eiusmod tempor</h3>
-                            <p class="section__description">Adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                                et dolore magna aliqua.</p>
-                            <div class="section__picturebox-info-reaction">
-                                <div class="tag view-tag">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.438" height="11.26"
-                                        viewBox="0 0 19.438 11.26">
-
-                                        <path id="VIEW" class="cls-1"
-                                            d="M789.71,9115.78a0.117,0.117,0,0,0,0,.02v0.01c0,0.01,0,.01,0,0.02s0,0.01,0,.02h0a0.729,0.729,0,0,1-.2.41c-0.2.25-.426,0.48-0.65,0.71a16.667,16.667,0,0,1-4.123,3.12,11.065,11.065,0,0,1-3.09,1.12,9.027,9.027,0,0,1-3.55-.05,13.554,13.554,0,0,1-5.5-2.86,15.053,15.053,0,0,1-2.108-2.04,0.778,0.778,0,0,1,0-1.05c0.2-.24.426-0.47,0.651-0.7a16.648,16.648,0,0,1,4.123-3.12,11.048,11.048,0,0,1,3.089-1.12,8.843,8.843,0,0,1,3.55.05,13.433,13.433,0,0,1,5.5,2.86,14.981,14.981,0,0,1,2.108,2.03,0.8,0.8,0,0,1,.2.41c0,0.01,0,.01,0,0.01a0.059,0.059,0,0,1,0,.02s0,0.01,0,.01a0.134,0.134,0,0,0,0,.02c0,0.01,0,.01,0,0.02s0,0.03,0,.04S789.71,9115.76,789.71,9115.78Zm-9.719-3.84a3.645,3.645,0,1,0,3.644,3.65A3.645,3.645,0,0,0,779.991,9111.94Zm0,5.47a1.825,1.825,0,1,1,1.822-1.82A1.825,1.825,0,0,1,779.991,9117.41Z"
-                                            transform="translate(-770.281 -9110.12)" />
-                                    </svg>
-                                    <span class="view-tag-num">992</span>
-                                </div>
-                                <div class="tag comment-tag">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.031" height="14.26"
-                                        viewBox="0 0 16.031 14.26">
-
-                                        <path id="SPEECH_BUBBLE_2" data-name="SPEECH BUBBLE 2" class="cls-1"
-                                            d="M437.416,9121.36a11.451,11.451,0,0,1-1.676-.25,6.352,6.352,0,0,1-5.647,2.23c2.441-1.15,2.391-3.07,1.957-3.32a5.615,5.615,0,0,1-3.068-4.76c0-3.4,3.727-6.14,8.434-6.14s7.577,2.74,7.577,6.14S442.124,9121.36,437.416,9121.36Zm-4.174-7.48a1.5,1.5,0,1,0,1.5,1.49A1.5,1.5,0,0,0,433.242,9113.88Zm3.75,0a1.5,1.5,0,1,0,1.5,1.49A1.5,1.5,0,0,0,436.992,9113.88Zm3.75,0a1.5,1.5,0,1,0,1.5,1.49A1.5,1.5,0,0,0,440.742,9113.88Z"
-                                            transform="translate(-428.969 -9109.12)" />
-                                    </svg>
-
-                                    <span class="comment-tag-num">42</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col c-4 section__picturebox-item">
-                        <div class="section__picturebox-img">
-                            <img src="./images/lastblog/1.png" alt="">
-                            <div class="section__picturebox-img-tag">
-                                <span class="tag-day">12</span>
-                                <span class="tag-month">Jan</span>
-                            </div>
-                        </div>
-                        <div class="section__picturebox-info">
-                            <h3 class="section__picturebox-info-title">incididunt ut labore et dolore</h3>
-                            <p class="section__description">Elit, sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua.</p>
-                            <div class="section__picturebox-info-reaction">
-                                <div class="tag view-tag">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.438" height="11.26"
-                                        viewBox="0 0 19.438 11.26">
-
-                                        <path id="VIEW" class="cls-1"
-                                            d="M789.71,9115.78a0.117,0.117,0,0,0,0,.02v0.01c0,0.01,0,.01,0,0.02s0,0.01,0,.02h0a0.729,0.729,0,0,1-.2.41c-0.2.25-.426,0.48-0.65,0.71a16.667,16.667,0,0,1-4.123,3.12,11.065,11.065,0,0,1-3.09,1.12,9.027,9.027,0,0,1-3.55-.05,13.554,13.554,0,0,1-5.5-2.86,15.053,15.053,0,0,1-2.108-2.04,0.778,0.778,0,0,1,0-1.05c0.2-.24.426-0.47,0.651-0.7a16.648,16.648,0,0,1,4.123-3.12,11.048,11.048,0,0,1,3.089-1.12,8.843,8.843,0,0,1,3.55.05,13.433,13.433,0,0,1,5.5,2.86,14.981,14.981,0,0,1,2.108,2.03,0.8,0.8,0,0,1,.2.41c0,0.01,0,.01,0,0.01a0.059,0.059,0,0,1,0,.02s0,0.01,0,.01a0.134,0.134,0,0,0,0,.02c0,0.01,0,.01,0,0.02s0,0.03,0,.04S789.71,9115.76,789.71,9115.78Zm-9.719-3.84a3.645,3.645,0,1,0,3.644,3.65A3.645,3.645,0,0,0,779.991,9111.94Zm0,5.47a1.825,1.825,0,1,1,1.822-1.82A1.825,1.825,0,0,1,779.991,9117.41Z"
-                                            transform="translate(-770.281 -9110.12)" />
-                                    </svg>
-                                    <span class="view-tag-num">1560</span>
-                                </div>
-                                <div class="tag comment-tag">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.031" height="14.26"
-                                        viewBox="0 0 16.031 14.26">
-
-                                        <path id="SPEECH_BUBBLE_2" data-name="SPEECH BUBBLE 2" class="cls-1"
-                                            d="M437.416,9121.36a11.451,11.451,0,0,1-1.676-.25,6.352,6.352,0,0,1-5.647,2.23c2.441-1.15,2.391-3.07,1.957-3.32a5.615,5.615,0,0,1-3.068-4.76c0-3.4,3.727-6.14,8.434-6.14s7.577,2.74,7.577,6.14S442.124,9121.36,437.416,9121.36Zm-4.174-7.48a1.5,1.5,0,1,0,1.5,1.49A1.5,1.5,0,0,0,433.242,9113.88Zm3.75,0a1.5,1.5,0,1,0,1.5,1.49A1.5,1.5,0,0,0,436.992,9113.88Zm3.75,0a1.5,1.5,0,1,0,1.5,1.49A1.5,1.5,0,0,0,440.742,9113.88Z"
-                                            transform="translate(-428.969 -9109.12)" />
-                                    </svg>
-
-                                    <span class="comment-tag-num">98</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <section class="openmap">
-            <div class="section-bg">
-                <img src="./images/map.png" alt="">
-            </div>
-            <div class="grid wide section__box">
-                <div class="section__title">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="19.188" height="25.62"
-                            viewBox="0 0 19.188 25.62">
-                            <path id="PIN_2" data-name="PIN 2" class="cls-1"
-                                d="M960,9322.8s-9.6-10.7-9.6-16a9.6,9.6,0,0,1,19.2,0C969.6,9312.1,960,9322.8,960,9322.8Zm0-22.4a6.4,6.4,0,1,0,6.4,6.4A6.4,6.4,0,0,0,960,9300.4Zm0,9.6a3.2,3.2,0,1,1,3.2-3.2A3.2,3.2,0,0,1,960,9310Z"
-                                transform="translate(-950.406 -9297.19)" />
-                        </svg>
-                    </h3>
-                    <h1>Open Map</h1>
-                    <div class="section__dodge"></div>
-                </div>
-            </div>
-        </section>
-        <footer class="footer">
-            <div class="grid wide">
-                <div class="row footer__content">
-                    <div class="col c-5 footer__content-left">
-                        <h1 class="footer__logo">MoGo</h1>
-                        <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <div class="followers"><span class="followers-num">15k</span> followers</div>
-                        <div class="followSocial">
-                            <span>Follow Us:</span>
-                            <ul class="list__Social">
-                                <li class="list__Social-item">
-                                    <a href="#" class="list__Social-links">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li class="list__Social-item">
-                                    <a href="#" class="list__Social-links">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="list__Social-item">
-                                    <a href="#" class="list__Social-links">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </li>
-                                <li class="list__Social-item">
-                                    <a href="#" class="list__Social-links">
-                                        <i class="fab fa-pinterest-p"></i>
-                                    </a>
-                                </li>
-                                <li class="list__Social-item">
-                                    <a href="#" class="list__Social-links">
-                                        <i class="fab fa-google-plus-g"></i>
-                                    </a>
-                                </li>
-                                <li class="list__Social-item">
-                                    <a href="#" class="list__Social-links">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </li>
-                                <li class="list__Social-item">
-                                    <a href="#" class="list__Social-links">
-                                        <i class="fab fa-dribbble"></i>
-                                    </a>
-                                </li>
-                                <li class="list__Social-item">
-                                    <a href="#" class="list__Social-links">
-                                        <i class="fab fa-tumblr"></i>
-                                    </a>
-
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer__combobox">
-                            <input type="email" placeholder="Your Email">
-                            <button class="btn">Subscribe</button>
-                        </div>
-                    </div>
-                    <div class="col c-4 footer__content-mid">
-                        <h3 class="footer__content-title">Blogs</h3>
-                        <ul class="footer__content-box">
-                            <li class="footer__content-box-item">
-                                <img src="./images/footer/photos-7884rHDsW8yqbsyN.png" alt=""
-                                    class="footer__content-box-img">
-                                <div class="footer__content-box-info">
-                                    <h3 class="footer__content-box-info-title">Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing</h3>
-                                    <span class="footer__content-box-info-time">Jan 9, 2016</span>
-                                </div>
-                            </li>
-                            <li class="footer__content-box-item">
-                                <img src="./images/footer/photos-7884lejLFH9MN8IC.png" alt=""
-                                    class="footer__content-box-img">
-                                <div class="footer__content-box-info">
-                                    <h3 class="footer__content-box-info-title">Consectetur adipiscing elit,
-                                        sed do eiusmod tempor</h3>
-                                    <span class="footer__content-box-info-time">Jan 9, 2016</span>
-                                </div>
-                            </li>
-                            <li class="footer__content-box-item">
-                                <img src="./images/footer/photos-7884P2smgicsZFyn.png" alt=""
-                                    class="footer__content-box-img">
-                                <div class="footer__content-box-info">
-                                    <h3 class="footer__content-box-info-title">sed do eiusmod tempor
-                                        incididunt ut labore</h3>
-                                    <span class="footer__content-box-info-time">Jan 9, 2016</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col c-3 footer__content-right">
-                        <h3 class="footer__content-title">Instagram</h3>
-                        <div class="footer__content-box">
-                            <div class="picture__box row">
-                                <img class="col c-4 picture__box-img" src="./images/footer/photos-7884MJE3ABUJPTO1.png"
-                                    alt="picture"></img>
-                                <img class="col c-4 picture__box-img" src="./images/footer/photos-7884MBqau4DkSE9K.png"
-                                    alt="picture"></img>
-                                <img class="col c-4 picture__box-img" src="./images/footer/photos-7884M86ovdhbiWKi.png"
-                                    alt="picture"></img>
-                                <img class="col c-4 picture__box-img" src="./images/footer/photos-7884rRdzNWx35XGc.png"
-                                    alt="picture"></img>
-                                <img class="col c-4 picture__box-img" src="./images/footer/photos-7884W4HBOgfC6WDb.png"
-                                    alt="picture"></img>
-                                <img class="col c-4 picture__box-img" src="./images/footer/photos-7884qnJlwaL4TA8x.png"
-                                    alt="picture"></img>
-                                <img class="col c-4 picture__box-img" src="./images/footer/photos-78841zcS1oLCjBr4.png"
-                                    alt="picture"></img>
-                                <img class="col c-4 picture__box-img" src="./images/footer/photos-78842fGoMmtuD5Z9.png"
-                                    alt="picture"></img>
-                                <img class="col c-4 picture__box-img" src="./images/footer/photos-7884nwL7ruku3rhJ.png"
-                                    alt="picture"></img>
-                            </div>
-                            <a href="#" class="viewmore">View more photos</a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="row copyright">
-                    © 2016 MoGo free PSD template by <span> Laaqiq</span>
-                </div>
-            </div>
-        </footer>
 
     </div>
 

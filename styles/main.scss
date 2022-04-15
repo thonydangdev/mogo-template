@@ -26,15 +26,75 @@ body {
     width: 100vw;
     color: #fff;
 
+    & .toggle {
+        top: 50%;
+        right: 4rem;
+        transform: translateY(-50%);
+        position: absolute;
+        display: none;
+        width: calc($header-height/2);
+        height: calc($header-height/2);
+        border: 0;
+        background-color: transparent;
+        transition: 1s;
+
+        &:hover {
+            & i {
+                color: $bottom-linear-color;
+            }
+        }
+
+        &.active {
+            & .icon-open {
+                display: none;
+            }
+
+            & .icon-close {
+                display: block;
+
+            }
+        }
+
+        & i {
+            color: #fff;
+            font-size: 2rem;
+
+            &.icon-open {
+                display: block;
+
+            }
+
+            &.icon-close {
+                display: none;
+
+
+            }
+
+        }
+
+
+    }
+
     &__logo {
         font-weight: 700;
         font-size: 3rem;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        user-select: none;
+
+
+
+        &:hover {
+            text-shadow: 0.1rem 0.1rem 1rem $top-linear-color, 0.2rem 0.2rem 1rem $bottom-linear-color;
+        }
     }
 
     &__navbar {
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+
         &-list {
             height: $header-height;
             display: flex;
@@ -49,10 +109,19 @@ body {
                     fill: #fff;
                 }
 
+                & span {
+                    display: none;
+                    font-weight: 500;
+                    color: #fff;
+
+                }
+
                 &-links {
                     text-decoration: none;
                     color: #fff;
                     font-weight: 500;
+
+
                 }
 
                 &+.header__navbar-list-item {
@@ -89,7 +158,7 @@ body {
 }
 
 .banner {
-    height: 100rem;
+    height: 100vh;
     position: relative;
 
     &__bg {
@@ -120,9 +189,14 @@ body {
         left: 0;
         bottom: 0;
         width: 100%;
+        height: 100%;
+        justify-content: space-between;
 
 
         & .section__title {
+            flex: 1.5;
+            justify-content: flex-end;
+
             & h3 {
                 font-size: 7.2rem;
                 margin: 0;
@@ -141,8 +215,14 @@ body {
             }
         }
 
+        & .space__btn {
+            flex: 0.25;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         & .banner-btn {
-            margin: 5rem 0 15.6rem 0;
             background-color: transparent;
             color: #fff;
             font-size: 1.4rem;
@@ -166,13 +246,13 @@ body {
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        margin-bottom: 3rem;
 
         &-item {
             display: flex;
             flex-direction: column;
             position: relative;
             min-width: 23%;
+            height: 100%;
 
             & .banner__progress-step {
                 height: 0.4rem;
@@ -212,7 +292,7 @@ body {
 
     &-item {
         padding: 0 1.5rem;
-        height: 25.4rem;
+        height: 45vh;
         position: relative;
         display: flex;
         justify-content: center;
@@ -268,9 +348,7 @@ body {
         & img {
             height: 100%;
             width: 100%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
+            object-fit: cover;
             transition: all 0.3s;
         }
 
@@ -289,7 +367,7 @@ body {
 }
 
 .statistic {
-    height: 27rem;
+    height: 30vh;
     padding-top: 0;
     padding-bottom: 0;
     background-color: $primary-color;
@@ -322,7 +400,9 @@ body {
 
         & h6 {
             font-size: 1.4rem;
+            height: 2.8rem;
             text-transform: uppercase;
+            text-align: center;
         }
     }
 }
@@ -330,6 +410,7 @@ body {
 .weworkwith {
     & .section {
         &__list {
+            margin-top: 4rem;
             list-style: none;
             display: flex;
             justify-content: center;
@@ -374,7 +455,7 @@ body {
 
                 &-info {
                     max-width: 28rem;
-                    margin-left: auto;
+                    margin-left: 2rem;
 
                     & p {
                         margin-top: 2.2rem;
@@ -388,13 +469,14 @@ body {
 }
 
 .uniquedesigns {
+    height: 90vh;
+
     &.content__box {
         padding-bottom: 0;
     }
 
     margin-bottom:4rem;
 
-    min-height: 78rem;
     position: relative;
 
     & img {
@@ -402,13 +484,15 @@ body {
     }
 
     &>img {
-        top: calc(55% + 0.2rem);
-        left: 58%;
-
+        // top: calc(34% + 0.2rem);
+        // left: 55%;
+        height: 40vh;
+        top: calc(54vh + 0.4rem);
+        left: 56vw
     }
 
     & .section-bg {
-        height: 85rem;
+        height: 90vh;
         background-image: url('../images/uiquedesign/2.jpg');
 
     }
@@ -427,9 +511,9 @@ body {
     overflow: hidden;
 
     &>img {
-        width: 30%;
-        height: 82.5%;
-        top: 72%;
+        width: 26vw;
+        height: 70.5%;
+        top: 75%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -447,7 +531,7 @@ body {
 
 .whatwedo {
     &__box {
-        height: 38rem;
+        min-height: 38rem;
         width: 100%;
         display: flex;
         align-items: center;
@@ -455,8 +539,6 @@ body {
 
         &>img {
             height: 100%;
-            margin-right: 3rem;
-            width: 50%
         }
     }
 
@@ -578,7 +660,6 @@ body {
 .slider {
     background-color: #f8f8f8;
     margin-top: 12rem;
-    height: 28rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -625,8 +706,11 @@ body {
     &-item {
         &-left {
             margin-right: 6rem;
-            padding: 6rem;
+            padding: 2rem;
             border: 3px solid $primary-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             & svg {
                 fill: $primary-color;
