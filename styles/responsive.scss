@@ -197,18 +197,6 @@
 
     .banner {
         & .section__box {
-            & .section__title {
-                & h3 {
-                    font-size: 5.2rem;
-                }
-
-                & h1 {
-                    font-size: 8rem;
-                    width: 50rem;
-                    line-height: 7rem;
-                }
-            }
-
             & .space__btn {
                 flex: 0.5;
             }
@@ -254,6 +242,7 @@
     .uniquedesigns {
         &>img {
             top: calc(53vh + 0.4rem);
+
         }
     }
 
@@ -266,9 +255,54 @@
 
 }
 
-@media (max-width: 400px) {
+@media (min-width: 416px) and (max-width:767px) {
     .banner {
         & .section__box {
+            & .section__title {
+                & h3 {
+                    font-size: 4.2rem;
+                }
+
+                & h1 {
+                    font-size: 7.5rem;
+                    width: 100vw;
+                    line-height: 8rem;
+                }
+            }
+
+            & .space__btn {
+                flex: 0.5;
+            }
+
+            & .banner__step-title {
+                font-size: 1.4rem;
+
+                & span {
+                    font-size: 1.8rem;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 415px) {
+    .banner {
+        & .section__box {
+            & .section__title {
+                flex: 1;
+
+                & h3 {
+                    font-size: 6vh;
+                }
+
+                & h1 {
+                    font-size: 8vh;
+                    width: 100vw;
+                    line-height: 10vh;
+                }
+            }
+
             & .banner__step-item::before {
                 margin-bottom: 1.2rem;
             }
@@ -291,6 +325,10 @@
     }
 
     .uniquedesigns {
+        &>img {
+            left: 40vw;
+        }
+
         & .section-bg {
             &>img {
                 width: 56%;

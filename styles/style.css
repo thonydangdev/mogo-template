@@ -748,6 +748,7 @@ body {
   width: 100vw;
   height: 100vh;
   color: #333333;
+  user-select: none;
 }
 
 .app {
@@ -896,6 +897,7 @@ body {
 .banner .section__box .section__title h3 {
   font-size: 7.2rem;
   margin: 0;
+  text-align: center;
 }
 .banner .section__box .section__title h1 {
   width: 90rem;
@@ -1455,7 +1457,7 @@ body {
 .meetourteam .team-logo {
   display: flex;
   align-items: center;
-  height: 20rem;
+  min-height: 20rem;
   justify-content: space-between;
   width: 100%;
   background-color: #f8f8f8;
@@ -1467,7 +1469,7 @@ body {
 }
 
 .someofwork .picture__box {
-  height: 78rem;
+  min-height: 78rem;
   width: 100%;
 }
 .someofwork .picture__box .picture__col {
@@ -1505,7 +1507,7 @@ body {
 
 .happyclients {
   position: relative;
-  height: 83rem;
+  min-height: 83rem;
 }
 .happyclients .section__box {
   height: 100%;
@@ -2001,14 +2003,6 @@ body {
     margin-left: 0;
   }
 
-  .banner .section__box .section__title h3 {
-    font-size: 5.2rem;
-  }
-  .banner .section__box .section__title h1 {
-    font-size: 8rem;
-    width: 50rem;
-    line-height: 7rem;
-  }
   .banner .section__box .space__btn {
     flex: 0.5;
   }
@@ -2048,7 +2042,37 @@ body {
     display: block;
   }
 }
-@media (max-width: 400px) {
+@media (min-width: 416px) and (max-width: 767px) {
+  .banner .section__box .section__title h3 {
+    font-size: 4.2rem;
+  }
+  .banner .section__box .section__title h1 {
+    font-size: 7.5rem;
+    width: 100vw;
+    line-height: 8rem;
+  }
+  .banner .section__box .space__btn {
+    flex: 0.5;
+  }
+  .banner .section__box .banner__step-title {
+    font-size: 1.4rem;
+  }
+  .banner .section__box .banner__step-title span {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 415px) {
+  .banner .section__box .section__title {
+    flex: 1;
+  }
+  .banner .section__box .section__title h3 {
+    font-size: 6vh;
+  }
+  .banner .section__box .section__title h1 {
+    font-size: 8vh;
+    width: 100vw;
+    line-height: 10vh;
+  }
   .banner .section__box .banner__step-item::before {
     margin-bottom: 1.2rem;
   }
@@ -2062,6 +2086,9 @@ body {
     font-size: 1.6rem;
   }
 
+  .uniquedesigns > img {
+    left: 40vw;
+  }
   .uniquedesigns .section-bg > img {
     width: 56%;
     height: 60.5%;

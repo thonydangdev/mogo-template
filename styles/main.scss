@@ -11,6 +11,7 @@ body {
     width: 100vw;
     height: 100vh;
     color: $text-color;
+    user-select: none;
 }
 
 .app {
@@ -158,6 +159,7 @@ body {
 }
 
 .banner {
+
     height: 100vh;
     position: relative;
 
@@ -200,6 +202,7 @@ body {
             & h3 {
                 font-size: 7.2rem;
                 margin: 0;
+                text-align: center;
             }
 
             & h1 {
@@ -914,7 +917,7 @@ body {
     & .team-logo {
         display: flex;
         align-items: center;
-        height: 20rem;
+        min-height: 20rem;
         justify-content: space-between;
         width: 100%;
         // animation: animate 10s linear infinite;
@@ -930,7 +933,7 @@ body {
 
 .someofwork {
     & .picture__box {
-        height: 78rem;
+        min-height: 78rem;
         width: 100%;
 
         & .picture__col {
@@ -983,7 +986,7 @@ body {
 
 .happyclients {
     position: relative;
-    height: 83rem;
+    min-height: 83rem;
 
     & .section__box {
         height: 100%;
