@@ -4,6 +4,7 @@ const toggleBtn = document.querySelector('.toggle')
 const statistic = document.querySelector('.statistic')
 const statisticNums = statistic.querySelectorAll('.statistic-item-num')
 const anchorHeader = document.querySelectorAll('.header__navbar-list-item-links')
+const scrollTopBtn = document.querySelector('.scrollTopBtn')
 
 const heightNav = 100;
 const scale = (num, in_min, in_max, out_min, out_max) => {
@@ -111,6 +112,11 @@ window.onscroll = (e) => {
     const pointOfBody = changeNum(document.body.getBoundingClientRect().top)
     bannerSection.classList.toggle('sticky', pointOfBody > 0)
     const point = Math.floor(window.scrollY);
+    if (point > 300) {
+        scrollTopBtn.style.opacity = 1
+    } else {
+        scrollTopBtn.style.opacity = 0
+    }
 
     if (bannerSection.classList.contains('sticky')) {
         const propertiesSteps = newStep.getPropertyValue()

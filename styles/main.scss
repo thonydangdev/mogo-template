@@ -32,6 +32,35 @@ body {
     height: inherit;
 }
 
+.scrollTopBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-image: #fff;
+    border: 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: all 1s;
+    opacity: 0;
+
+    &:hover {
+        background-image: $linear-gradient-image;
+
+        & svg {
+            fill: #fff;
+        }
+    }
+
+    & svg {
+        fill: #000;
+    }
+}
+
 .header {
     height: $header-height;
     font-size: 1.4rem;
