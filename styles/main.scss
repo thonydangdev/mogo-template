@@ -359,6 +359,7 @@ body {
             content: '';
             position: absolute;
             z-index: -1;
+            top: 0;
             left: 1.5rem;
             width: calc(100% - (1.5rem * 2));
             height: 100%;
@@ -666,6 +667,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 3rem 0;
 
     & .btn-slider {
         border: 0;

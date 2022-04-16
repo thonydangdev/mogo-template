@@ -1025,6 +1025,7 @@ body {
   content: "";
   position: absolute;
   z-index: -1;
+  top: 0;
   left: 1.5rem;
   width: calc(100% - 3rem);
   height: 100%;
@@ -1267,6 +1268,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3rem 0;
 }
 .slider .btn-slider {
   border: 0;
