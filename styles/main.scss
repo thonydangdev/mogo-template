@@ -904,6 +904,7 @@ body {
                 content: '';
                 position: absolute;
                 z-index: -1;
+                top: 0;
                 left: 1.5rem;
                 width: calc(100% - (1.5rem * 2));
                 height: $image-meetourteam-height;
@@ -1022,7 +1023,7 @@ body {
 
         &__info {
             width: calc(100% - 11rem);
-            margin-left: 3rem;
+            padding-left: 3rem;
 
             &__name {
                 text-transform: uppercase;

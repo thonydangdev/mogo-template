@@ -1447,6 +1447,7 @@ body {
   content: "";
   position: absolute;
   z-index: -1;
+  top: 0;
   left: 1.5rem;
   width: calc(100% - 3rem);
   height: 47rem;
@@ -1535,7 +1536,7 @@ body {
 }
 .happyclients .people__info {
   width: calc(100% - 11rem);
-  margin-left: 3rem;
+  padding-left: 3rem;
 }
 .happyclients .people__info__name {
   text-transform: uppercase;
@@ -1956,6 +1957,13 @@ body {
   .section__picturebox-item {
     height: 35vh;
   }
+
+  .footer {
+    padding: 3rem;
+  }
+  .footer__content-right, .footer__content-mid {
+    margin-top: 3rem;
+  }
 }
 @media (max-width: 767px) {
   .header .toggle {
@@ -2060,6 +2068,13 @@ body {
   .banner .section__box .banner__step-title span {
     font-size: 1.8rem;
   }
+
+  .footer {
+    padding: 3rem;
+  }
+  .footer__content-right, .footer__content-mid {
+    margin-top: 3rem;
+  }
 }
 @media (max-width: 415px) {
   .banner .section__box .section__title {
@@ -2093,6 +2108,19 @@ body {
     width: 56%;
     height: 60.5%;
     top: 78%;
+  }
+
+  .footer {
+    padding: 3rem;
+  }
+  .footer__content-left .footer__combobox {
+    flex-wrap: wrap;
+  }
+  .footer__content-left .footer__combobox .btn {
+    width: 100%;
+  }
+  .footer__content-right, .footer__content-mid {
+    margin-top: 5rem;
   }
 }
 

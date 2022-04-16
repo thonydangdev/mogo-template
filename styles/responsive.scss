@@ -123,6 +123,19 @@
         height: 35vh;
     }
 
+    .footer {
+        padding: 3rem;
+
+        &__content {
+
+            &-right,
+            &-mid {
+                margin-top: 3rem;
+
+            }
+        }
+    }
+
 
 
 
@@ -284,6 +297,19 @@
             }
         }
     }
+
+    .footer {
+        padding: 3rem;
+
+        &__content {
+
+            &-right,
+            &-mid {
+                margin-top: 3rem;
+
+            }
+        }
+    }
 }
 
 @media (max-width: 415px) {
@@ -334,6 +360,28 @@
                 width: 56%;
                 height: 60.5%;
                 top: 78%;
+            }
+        }
+    }
+
+    .footer {
+        padding: 3rem;
+
+        &__content {
+            &-left {
+                & .footer__combobox {
+                    flex-wrap: wrap;
+
+                    & .btn {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &-right,
+            &-mid {
+                margin-top: 5rem;
+
             }
         }
     }
