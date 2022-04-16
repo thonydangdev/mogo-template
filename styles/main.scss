@@ -547,8 +547,7 @@ body {
     }
 
     &__content {
-        height: 38rem;
-        width: 50%;
+        min-height: 38rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -588,7 +587,7 @@ body {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                height: 6rem;
+                min-height: 6rem;
                 padding: 0 1.6rem;
                 border-bottom: 1px solid #e5e5e5;
                 cursor: pointer;
