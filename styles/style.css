@@ -594,6 +594,7 @@
   }
 }
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
@@ -668,6 +669,7 @@ p.section__description {
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;

@@ -17,6 +17,7 @@ $banner-sticky-height:10rem;
 
 
 html {
+    scroll-behavior: smooth;
     font-size: 62.5%;
     font-family: $Montserrat;
     box-sizing: border-box;

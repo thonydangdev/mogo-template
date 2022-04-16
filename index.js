@@ -3,6 +3,8 @@ const bannerSection = document.querySelector('.banner')
 const toggleBtn = document.querySelector('.toggle')
 const statistic = document.querySelector('.statistic')
 const statisticNums = statistic.querySelectorAll('.statistic-item-num')
+const anchorHeader = document.querySelectorAll('.header__navbar-list-item-links')
+
 const heightNav = 100;
 const scale = (num, in_min, in_max, out_min, out_max) => {
     return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
@@ -14,6 +16,15 @@ const SelectorOfStep = {
     aboutStep: ['.meetourteam', '.someofwork', '.happyclients', '.lastestblog'],
     contactStep: ['.openmap', '.footer']
 }
+anchorHeader.forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault()
+        // document.querySelector(this.getAttribute('href')).scrollIntoView({
+        //     behavior: 'smooth',
+        //     block: 'nearest'
+        // })
+    })
+})
 class Step {
     constructor(childOfStep, stepIndex) {
         this.childOfStep = childOfStep
@@ -109,7 +120,6 @@ window.onscroll = (e) => {
                 getWidthProgress(propertiesSteps[value].element, point - propertiesSteps[value].startPoint, propertiesSteps[value].scrollHeight)
             }
         }
-        console.log(point, maxHasScrollHeight - window.innerHeight)
         if (point >= maxHasScrollHeight - window.innerHeight) {
             for (var i = 0; i < stepIndex.length; i++) {
                 propertiesSteps[stepIndex[i]].element.style.width = '94%'
