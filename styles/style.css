@@ -748,7 +748,7 @@ body {
   width: 100vw;
   height: 100vh;
   color: #333333;
-  user-select: none;
+  overflow: auto;
 }
 
 .app {
@@ -858,8 +858,32 @@ body {
 }
 
 .banner {
+  transition: 1s;
   height: 100vh;
   position: relative;
+}
+.banner.sticky {
+  height: 10rem;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  top: 0;
+}
+.banner.sticky + section {
+  padding: 23rem 3rem 11rem;
+}
+.banner.sticky .section__box {
+  justify-content: flex-end;
+}
+.banner.sticky .section__box .section__title, .banner.sticky .section__box .space__btn {
+  transform: scale(0);
+  opacity: 0;
+}
+.banner.sticky .banner__step {
+  padding-bottom: 1rem;
+}
+.banner.sticky .banner__step-item::before {
+  margin-bottom: 0;
 }
 .banner__bg {
   position: absolute;
@@ -870,6 +894,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  transition: 1s;
 }
 .banner__bg::after {
   content: "";
@@ -893,6 +918,9 @@ body {
 .banner .section__box .section__title {
   flex: 1.5;
   justify-content: flex-end;
+  transition: 1s;
+  transform: scale(1);
+  opacity: 1;
 }
 .banner .section__box .section__title h3 {
   font-size: 7.2rem;
@@ -910,6 +938,9 @@ body {
   background-color: #fff;
 }
 .banner .section__box .space__btn {
+  transition: 1s;
+  transform: scale(1);
+  opacity: 1;
   flex: 0.25;
   display: flex;
   justify-content: center;
@@ -940,13 +971,12 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  min-width: 23%;
   height: 100%;
 }
 .banner__step-item .banner__progress-step {
   height: 0.4rem;
   position: absolute;
-  width: 30%;
+  width: 0%;
   background-color: #f38181;
   transition: all 0.3s linear;
 }
@@ -1173,7 +1203,7 @@ body {
   justify-content: space-between;
 }
 .whatwedo__box > img {
-  height: 100%;
+  min-height: 38rem;
 }
 .whatwedo__content {
   min-height: 38rem;
@@ -1913,18 +1943,6 @@ body {
   .header .banner__step {
     padding: 0 3rem;
   }
-
-  .statistic {
-    height: 20vh;
-  }
-  .statistic-item span {
-    font-size: 4.2rem;
-    font-weight: 600;
-  }
-  .statistic-item h6 {
-    font-size: 1rem;
-    height: 2rem;
-  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .weworkwith .section__list .section__list-item:nth-child(1) {
@@ -1945,7 +1963,7 @@ body {
   }
 
   .banner .section__box .banner__step {
-    padding: 0 2rem;
+    padding: 0 2rem 0.6rem;
   }
   .banner .section__box .section__title h3 {
     font-size: 4.2rem;
@@ -1953,6 +1971,18 @@ body {
   .banner .section__box .section__title h1 {
     font-size: 12rem;
     width: 80rem;
+  }
+
+  .statistic {
+    height: 20vh;
+  }
+  .statistic-item span {
+    font-size: 4.2rem;
+    font-weight: 600;
+  }
+  .statistic-item h6 {
+    font-size: 1rem;
+    height: 2rem;
   }
 
   .section__picturebox-item {
@@ -1971,14 +2001,14 @@ body {
     display: block;
   }
   .header .toggle.active ~ .header__navbar {
-    transform: translate(0, 8.4rem);
+    transform: translate(0, 10rem);
     opacity: 1;
   }
   .header__navbar {
     position: absolute;
-    height: calc(100vh - 8.4rem);
+    height: calc(100vh - 10rem);
     display: block;
-    transform: translate(100%, 8.4rem);
+    transform: translate(100%, 10rem);
     opacity: 0;
     transition: 1s;
     background-image: linear-gradient(to bottom, #e98283, #f1da8a);
@@ -2070,6 +2100,18 @@ body {
     font-size: 1.8rem;
   }
 
+  .statistic {
+    height: 20vh;
+  }
+  .statistic-item span {
+    font-size: 4.2rem;
+    font-weight: 600;
+  }
+  .statistic-item h6 {
+    font-size: 1rem;
+    height: 2rem;
+  }
+
   .footer {
     padding: 3rem;
   }
@@ -2093,13 +2135,25 @@ body {
     margin-bottom: 1.2rem;
   }
   .banner .section__box .banner__step {
-    padding: 0 1rem;
+    padding: 0 1rem 1rem;
   }
   .banner .section__box .banner__step-title {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   .banner .section__box .banner__step-title span {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+  }
+
+  .statistic {
+    height: 20vh;
+  }
+  .statistic-item span {
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+  .statistic-item h6 {
+    font-size: 0.6rem;
+    height: 1.2rem;
   }
 
   .uniquedesigns .section-bg > img {

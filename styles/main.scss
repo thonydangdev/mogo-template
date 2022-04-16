@@ -11,8 +11,22 @@ body {
     width: 100vw;
     height: 100vh;
     color: $text-color;
-    user-select: none;
+    overflow: auto;
 }
+
+
+// ::-webkit-scrollbar {
+//     width: 0.4rem;
+// }
+
+// ::-webkit-scrollbar-track {
+//     border-radius: 1rem;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     border-radius: 1rem;
+//     background-color: rgba(0, 0, 0, 0.3);
+// }
 
 .app {
     height: inherit;
@@ -159,7 +173,39 @@ body {
 }
 
 .banner {
+    &.sticky {
+        height: $banner-sticky-height;
+        position: fixed;
+        width: 100vw;
+        z-index: 1;
+        top: 0;
 
+        &+section {
+            padding: 23rem 3rem 11rem;
+        }
+
+        & .section__box {
+            justify-content: flex-end;
+
+            & .section__title,
+            & .space__btn {
+                transform: scale(0);
+                opacity: 0;
+
+            }
+
+        }
+
+        & .banner__step {
+            padding-bottom: 1rem;
+        }
+
+        & .banner__step-item::before {
+            margin-bottom: 0;
+        }
+    }
+
+    transition:1s;
     height: 100vh;
     position: relative;
 
@@ -172,6 +218,7 @@ body {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        transition: 1s;
 
         &::after {
             content: '';
@@ -198,6 +245,10 @@ body {
         & .section__title {
             flex: 1.5;
             justify-content: flex-end;
+            transition: 1s;
+            transform: scale(1);
+            opacity: 1;
+
 
             & h3 {
                 font-size: 7.2rem;
@@ -219,6 +270,9 @@ body {
         }
 
         & .space__btn {
+            transition: 1s;
+            transform: scale(1);
+            opacity: 1;
             flex: 0.25;
             display: flex;
             justify-content: center;
@@ -254,13 +308,12 @@ body {
             display: flex;
             flex-direction: column;
             position: relative;
-            min-width: 23%;
             height: 100%;
 
             & .banner__progress-step {
                 height: 0.4rem;
                 position: absolute;
-                width: 30%;
+                width: 0%;
                 background-color: $dodge-title-color;
                 transition: all 0.3s linear;
 
@@ -542,7 +595,7 @@ body {
         justify-content: space-between;
 
         &>img {
-            height: 100%;
+            min-height: 38rem;
         }
     }
 

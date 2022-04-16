@@ -53,24 +53,6 @@
         }
     }
 
-    .statistic {
-        height: 20vh;
-
-        &-item {
-            & span {
-                font-size: 4.2rem;
-                font-weight: 600;
-            }
-
-            & h6 {
-                font-size: 1rem;
-                height: 2rem;
-
-            }
-        }
-    }
-
-
 }
 
 // Tablet
@@ -100,7 +82,7 @@
 
     .banner .section__box {
         & .banner__step {
-            padding: 0 2rem;
+            padding: 0 2rem 0.6rem;
         }
 
         & .section__title {
@@ -115,6 +97,23 @@
         }
 
 
+    }
+
+    .statistic {
+        height: 20vh;
+
+        &-item {
+            & span {
+                font-size: 4.2rem;
+                font-weight: 600;
+            }
+
+            & h6 {
+                font-size: 1rem;
+                height: 2rem;
+
+            }
+        }
     }
 
 
@@ -149,15 +148,15 @@
         }
 
         & .toggle.active~.header__navbar {
-            transform: translate(0, $header-height);
+            transform: translate(0, $banner-sticky-height);
             opacity: 1;
         }
 
         &__navbar {
             position: absolute;
-            height: calc(100vh - $header-height);
+            height: calc(100vh - $banner-sticky-height);
             display: block;
-            transform: translate(100%, $header-height);
+            transform: translate(100%, $banner-sticky-height);
             opacity: 0;
             transition: 1s;
             background-image: $linear-gradient-image;
@@ -298,6 +297,23 @@
         }
     }
 
+    .statistic {
+        height: 20vh;
+
+        &-item {
+            & span {
+                font-size: 4.2rem;
+                font-weight: 600;
+            }
+
+            & h6 {
+                font-size: 1rem;
+                height: 2rem;
+
+            }
+        }
+    }
+
     .footer {
         padding: 3rem;
 
@@ -334,20 +350,37 @@
             }
 
             & .banner__step {
-                padding: 0 1rem;
+                padding: 0 1rem 1rem;
             }
 
             & .banner__step-title {
-                font-size: 1.2rem;
+                font-size: 0.8rem;
 
                 & span {
-                    font-size: 1.6rem;
+                    font-size: 1.2rem;
                 }
 
             }
         }
 
 
+    }
+
+    .statistic {
+        height: 20vh;
+
+        &-item {
+            & span {
+                font-size: 2.8rem;
+                font-weight: 600;
+            }
+
+            & h6 {
+                font-size: 0.6rem;
+                height: 1.2rem;
+
+            }
+        }
     }
 
     .uniquedesigns {
