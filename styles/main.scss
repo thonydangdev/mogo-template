@@ -203,7 +203,7 @@ body {
 
 .banner {
     &.sticky {
-        height: $banner-sticky-height;
+        min-height: $banner-sticky-height;
         position: fixed;
         width: 100vw;
         z-index: 1;

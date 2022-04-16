@@ -891,7 +891,7 @@ body {
   position: relative;
 }
 .banner.sticky {
-  height: 10rem;
+  min-height: 10rem;
   position: fixed;
   width: 100vw;
   z-index: 1;
