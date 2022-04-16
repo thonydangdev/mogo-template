@@ -1263,7 +1263,7 @@ body {
 
 .slider {
   background-color: #f8f8f8;
-  margin-top: 12rem;
+  margin-top: 9rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2102,9 +2102,6 @@ body {
     font-size: 1.6rem;
   }
 
-  .uniquedesigns > img {
-    left: 40vw;
-  }
   .uniquedesigns .section-bg > img {
     width: 56%;
     height: 60.5%;
