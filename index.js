@@ -109,14 +109,12 @@ window.onscroll = (e) => {
                 getWidthProgress(propertiesSteps[value].element, point - propertiesSteps[value].startPoint, propertiesSteps[value].scrollHeight)
             }
         }
+        console.log(point, maxHasScrollHeight - window.innerHeight)
         if (point >= maxHasScrollHeight - window.innerHeight) {
             for (var i = 0; i < stepIndex.length; i++) {
                 propertiesSteps[stepIndex[i]].element.style.width = '94%'
-                propertiesSteps['contactStep'].element.style.transitionDelay = '0.3s'
 
             }
-        } else {
-            propertiesSteps['contactStep'].element.style.width = '0%'
         }
 
     }
