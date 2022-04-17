@@ -120,16 +120,20 @@ window.onscroll = (e) => {
 
     if (bannerSection.classList.contains('sticky')) {
         const propertiesSteps = newStep.getPropertyValue()
-        const maxHasScrollHeight = propertiesSteps[stepIndex[stepIndex.length - 1]].endPoint
+        const maxHasScrollHeight = document.body.scrollHeight - window.innerHeight
+        console.log(maxHasScrollHeight)
         for (var value of stepIndex) {
             if (point >= propertiesSteps[value].startPoint && point <= propertiesSteps[value].endPoint) {
                 getWidthProgress(propertiesSteps[value].element, point - propertiesSteps[value].startPoint, propertiesSteps[value].scrollHeight)
+            } else if (point < propertiesSteps[value].startPoint) {
+                propertiesSteps[value].element.style.width = "0%"
+            } else {
+                propertiesSteps[value].element.style.width = "94%"
             }
         }
-        if (point >= maxHasScrollHeight - window.innerHeight) {
+        if (point >= maxHasScrollHeight) {
             for (var i = 0; i < stepIndex.length; i++) {
                 propertiesSteps[stepIndex[i]].element.style.width = '94%'
-
             }
         }
 
