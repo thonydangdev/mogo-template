@@ -264,6 +264,21 @@
         }
     }
 
+    .footer {
+        padding: 3rem;
+
+        &__content {
+            &-box .footer__content-box-item {
+                margin-bottom: 1.4rem;
+            }
+
+            &-right,
+            &-mid {
+                margin-top: 3rem;
+
+            }
+        }
+    }
 
 }
 

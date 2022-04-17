@@ -2108,6 +2108,16 @@ body {
   .slider-content-item {
     display: block;
   }
+
+  .footer {
+    padding: 3rem;
+  }
+  .footer__content-box .footer__content-box-item {
+    margin-bottom: 1.4rem;
+  }
+  .footer__content-right, .footer__content-mid {
+    margin-top: 3rem;
+  }
 }
 @media (min-width: 416px) and (max-width: 767px) {
   .banner .section__box .section__title h3 {
