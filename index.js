@@ -3,7 +3,7 @@ const bannerSection = document.querySelector('.banner')
 const toggleBtn = document.querySelector('.toggle')
 const statistic = document.querySelector('.statistic')
 const statisticNums = statistic.querySelectorAll('.statistic-item-num')
-const anchorHeader = document.querySelectorAll('.header__navbar-list-item-links')
+// const anchorHeader = document.querySelectorAll('.header__navbar-list-item-links')
 const scrollTopBtn = document.querySelector('.scrollTopBtn')
 
 const heightNav = 100;
@@ -17,15 +17,15 @@ const SelectorOfStep = {
     aboutStep: ['.meetourteam', '.someofwork', '.happyclients', '.lastestblog'],
     contactStep: ['.openmap', '.footer']
 }
-anchorHeader.forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault()
-        // document.querySelector(this.getAttribute('href')).scrollIntoView({
-        //     behavior: 'smooth',
-        //     block: 'nearest'
-        // })
-    })
-})
+// anchorHeader.forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault()
+//         // document.querySelector(this.getAttribute('href')).scrollIntoView({
+//         //     behavior: 'smooth',
+//         //     block: 'nearest'
+//         // })
+//     })
+// })
 class Step {
     constructor(childOfStep, stepIndex) {
         this.childOfStep = childOfStep

@@ -753,6 +753,14 @@ body {
   overflow: auto;
 }
 
+section[id]:not(#ABOUT) {
+  scroll-margin-top: 3rem;
+}
+
+section#ABOUT {
+  scroll-margin-top: -6rem;
+}
+
 .app {
   height: inherit;
 }
