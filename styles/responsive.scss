@@ -9,7 +9,6 @@
         &:nth-child(2) {
             border-bottom: 0.1rem solid #e5e5e5;
             margin-top: 0;
-
         }
 
         &:nth-child(3) {
@@ -25,11 +24,10 @@
 }
 
 //Table & Mobile
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
     section.content__box {
         padding: 9rem 3rem 11rem;
     }
-
 
     .banner {
         height: 100vh;
@@ -52,7 +50,6 @@
             padding: 0 3rem;
         }
     }
-
 }
 
 // Tablet
@@ -66,7 +63,6 @@
         &:nth-child(2) {
             border-bottom: 0.1rem solid #e5e5e5;
             margin-top: 0;
-
         }
 
         &:nth-child(3) {
@@ -95,8 +91,6 @@
                 width: 80rem;
             }
         }
-
-
     }
 
     .statistic {
@@ -111,12 +105,9 @@
             & h6 {
                 font-size: 1rem;
                 height: 2rem;
-
             }
         }
     }
-
-
 
     .section__picturebox-item {
         height: 35vh;
@@ -126,18 +117,12 @@
         padding: 3rem;
 
         &__content {
-
             &-right,
             &-mid {
                 margin-top: 3rem;
-
             }
         }
     }
-
-
-
-
 }
 
 // Mobile
@@ -147,7 +132,7 @@
             display: block;
         }
 
-        & .toggle.active~.header__navbar {
+        & .toggle.active ~ .header__navbar {
             transform: translate(0, $banner-sticky-height);
             opacity: 1;
         }
@@ -196,14 +181,11 @@
                         margin-left: 1rem;
                     }
 
-
-                    &+.header__navbar-list-item {
+                    & + .header__navbar-list-item {
                         margin-left: 0;
-
                     }
                 }
             }
-
         }
     }
 
@@ -219,11 +201,9 @@
                 & span {
                     font-size: 1.8rem;
                 }
-
             }
         }
     }
-
 
     .section__picturebox-item {
         height: 60vh;
@@ -246,15 +226,15 @@
     }
 
     .section-bg {
-        &>img {
+        & > img {
             width: 60%;
         }
     }
 
     .uniquedesigns {
-        &>img {
+        & > img {
             top: calc(53vh + 0.4rem);
-
+            left: 50vw;
         }
     }
 
@@ -275,14 +255,12 @@
             &-right,
             &-mid {
                 margin-top: 3rem;
-
             }
         }
     }
-
 }
 
-@media (min-width: 416px) and (max-width:767px) {
+@media (min-width: 416px) and (max-width: 767px) {
     .banner {
         & .section__box {
             & .section__title {
@@ -307,7 +285,6 @@
                 & span {
                     font-size: 1.8rem;
                 }
-
             }
         }
     }
@@ -324,7 +301,6 @@
             & h6 {
                 font-size: 1rem;
                 height: 2rem;
-
             }
         }
     }
@@ -333,11 +309,9 @@
         padding: 3rem;
 
         &__content {
-
             &-right,
             &-mid {
                 margin-top: 3rem;
-
             }
         }
     }
@@ -374,11 +348,8 @@
                 & span {
                     font-size: 1.2rem;
                 }
-
             }
         }
-
-
     }
 
     .statistic {
@@ -393,14 +364,13 @@
             & h6 {
                 font-size: 0.6rem;
                 height: 1.2rem;
-
             }
         }
     }
 
     .uniquedesigns {
         & .section-bg {
-            &>img {
+            & > img {
                 width: 56%;
                 height: 60.5%;
                 top: 78%;
@@ -425,9 +395,7 @@
             &-right,
             &-mid {
                 margin-top: 5rem;
-
             }
         }
     }
-
 }

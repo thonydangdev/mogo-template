@@ -2111,6 +2111,7 @@ section#ABOUT {
 
   .uniquedesigns > img {
     top: calc(53vh + 0.4rem);
+    left: 50vw;
   }
 
   .slider-content-item {
