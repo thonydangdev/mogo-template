@@ -7,10 +7,9 @@ body {
     font-size: 1.6rem;
     font-family: $Montserrat;
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     color: $text-color;
-    overflow: auto;
 }
 
 section[id]:not(#ABOUT) {
@@ -36,7 +35,6 @@ section#ABOUT {
 
 .app {
     height: inherit;
-    overflow-x: hidden;
 }
 
 .scrollTopBtn {
